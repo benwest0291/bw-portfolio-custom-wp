@@ -1,0 +1,16 @@
+.header {
+  background-color: #ffffff;
+  border-bottom: solid 1px #ECECEC;
+}
+.header__logo {
+  width: 150px;
+}
+.header__links a {
+  color: #414141;
+  cursor: pointer;
+}
+.header__links a:hover, .header__links afocus {
+  color: #FF5555;
+}
+
+/*# sourceMappingURL=styles.css.map */

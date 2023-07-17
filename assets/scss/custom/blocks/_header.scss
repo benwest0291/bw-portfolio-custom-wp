@@ -1,0 +1,17 @@
+.header{
+  background-color: $white;
+  border-bottom: solid 1px #ECECEC;
+
+  &__logo{
+    width: 150px;
+  }
+
+  &__links a{
+    color: $gray;
+    cursor: pointer;
+
+    &:hover, &focus{
+      color: $pink;
+    }
+  }
+}
