@@ -1,0 +1,21 @@
+.btn__primary{
+  background-color: $purple;
+  padding: 5px 20px;
+  border-radius: 30px;
+  transition: color .3s ease-in-out;
+
+  &__arrow{
+    background-color: $green;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 18px;
+    color: $white;
+    rotate: -40deg;
+    margin: 0 -13px 0 12px;
+  }
+
+  &:hover, &focus{
+    background-color: $green;
+    color: $white;
+  }
+}

@@ -1,17 +1,47 @@
 .header{
-  background-color: $white;
-  border-bottom: solid 1px #ECECEC;
+  background: rgba(0, 0, 0, 0.20);
+  backdrop-filter: blur(5px);
 
   &__logo{
     width: 150px;
   }
 
+  &__links__container{
+    padding-top: 80px;
+    height: 100vh;
+    top: -830%;
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 0;
+      height: 100%;
+      top: 0;
+    }
+  }
+
+  &__links{
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      justify-content: end;
+    }
+
+    &__contact{
+      margin-top: 15px !important;
+    }
+  }
+
   &__links a{
-    color: $gray;
+    color: $white;
     cursor: pointer;
+    font-size: 40px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 18px;
+    }
 
     &:hover, &focus{
-      color: $pink;
+      color: $green;
     }
   }
 }

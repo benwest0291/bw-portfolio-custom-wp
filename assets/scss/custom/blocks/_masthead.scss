@@ -1,0 +1,25 @@
+.masthead{
+
+
+  &__top__heading{
+    margin-top: 150px;
+    font-weight: $font-weight-light;
+    color:$white;
+    font-size: 60px;
+  }
+
+  &__main__heading{
+    font-weight: $font-weight-light;
+    color:$white;
+    font-size: 65px;
+
+    span{
+      font-weight: $font-weight-bold;
+      color: $green;
+    }
+  }
+
+  &__masthead__content{
+    width: 80%;
+  }
+}

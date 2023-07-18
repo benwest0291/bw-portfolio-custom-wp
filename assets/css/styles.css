@@ -1,16 +1,145 @@
-.header {
+body {
+  background: #111827;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  font-weight: 400;
+}
+
+p {
+  color: #CBD5E1;
+}
+
+.text-block p:last-of-type {
+  margin-bottom: 0;
+}
+
+.text-xs {
+  font-size: 0.875rem;
+  line-height: 1.4285714286;
+}
+
+.text-sm {
+  font-size: 1rem;
+  line-height: 1.375;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-inherit {
+  color: inherit !important;
+}
+
+.bg-green {
+  background-color: #111827 !important;
+}
+
+.to-animate {
+  opacity: 0;
+  transform: scale(0.6);
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+.to-animate.in {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.block-white-bg {
   background-color: #ffffff;
-  border-bottom: solid 1px #ECECEC;
+}
+.block-white-bg + .block-white-bg {
+  padding-top: 0 !important;
+}
+
+.btn__primary {
+  background-color: #6366F1;
+  padding: 5px 20px;
+  border-radius: 30px;
+  transition: color 0.3s ease-in-out;
+}
+.btn__primary__arrow {
+  background-color: #2DD4BF;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 18px;
+  color: #ffffff;
+  rotate: -40deg;
+  margin: 0 -13px 0 12px;
+}
+.btn__primary:hover, .btn__primaryfocus {
+  background-color: #2DD4BF;
+  color: #ffffff;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
 }
 .header__logo {
   width: 150px;
 }
+.header__links__container {
+  padding-top: 80px;
+  height: 100vh;
+  top: -830%;
+}
+@media (min-width: 992px) {
+  .header__links__container {
+    padding-top: 0;
+    height: 100%;
+    top: 0;
+  }
+}
+.header__links {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .header__links {
+    display: flex;
+    justify-content: end;
+  }
+}
+.header__links__contact {
+  margin-top: 15px !important;
+}
 .header__links a {
-  color: #414141;
+  color: #ffffff;
   cursor: pointer;
+  font-size: 40px;
+}
+@media (min-width: 992px) {
+  .header__links a {
+    font-size: 18px;
+  }
 }
 .header__links a:hover, .header__links afocus {
-  color: #FF5555;
+  color: #2DD4BF;
+}
+
+.masthead__top__heading {
+  margin-top: 150px;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 60px;
+}
+.masthead__main__heading {
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 65px;
+}
+.masthead__main__heading span {
+  font-weight: 700;
+  color: #2DD4BF;
+}
+.masthead__masthead__content {
+  width: 80%;
 }
 
 /*# sourceMappingURL=styles.css.map */
