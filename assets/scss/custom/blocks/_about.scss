@@ -1,6 +1,10 @@
 .about{
 
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 150px;
+  }
 
   &__heading{
     color: $white;

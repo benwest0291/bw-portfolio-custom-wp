@@ -8,7 +8,8 @@
 @import "global";
 
 // Components
-@import "../custom/components/buttons";
+@import "components/buttons";
+@import "components/project-card";
 
 // Blocks
 @import "../custom/blocks/header";
@@ -16,5 +17,6 @@
 @import "../custom/blocks/masthead";
 @import "../custom/blocks/tech-stack";
 @import "../custom/blocks/about";
+@import "../custom/blocks/projects";
 
 // Templates
