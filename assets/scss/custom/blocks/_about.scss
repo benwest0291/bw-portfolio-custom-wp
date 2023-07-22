@@ -1,0 +1,16 @@
+.about{
+
+  margin-bottom: 80px;
+
+  &__heading{
+    color: $white;
+  }
+
+  &__content{
+    line-height: $line-height-base;
+
+    @include media-breakpoint-up(md) {
+      margin: 0 150px;
+    }
+  }
+}

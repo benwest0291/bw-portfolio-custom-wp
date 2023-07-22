@@ -38,9 +38,9 @@ $masthead_button_two_link = get_field('masthead_button_two_link');
             </div>
 
             <div class="col-12 col-md-6">
-                <img class="masthead__bg position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/rays.svg);" />
+                <img class="masthead__bg position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/rays.svg);" alt="background image rays" />
                 <?php if ($masthead_image != null){ ?>
-                    <img class="masthead__image position-relative" src="<?php echo $masthead_image['url']; ?>" />
+                    <img class="masthead__image position-relative" src="<?php echo $masthead_image['url']; ?>" alt="<?php echo esc_attr($masthead_image['alt']); ?>"  />
                 <?php } ?>
             </div>
         </div>
