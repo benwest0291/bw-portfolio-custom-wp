@@ -15,6 +15,16 @@ p{
   color: #CBD5E1;
 }
 
+.social__icon{
+  color: $white;
+  font-size: 35px;
+  transition: ease-in-out .5s;
+
+  &:hover, &focus{
+    color: $green;
+  }
+}
+
 
 // Text Block
 .text-block {

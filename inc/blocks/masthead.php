@@ -24,6 +24,7 @@ $masthead_button_two_link = get_field('masthead_button_two_link');
                 <?php if ($masthead_content != null){ ?>
                     <p class="masthead__content mt-3"><?php echo $masthead_content; ?></p>
                 <?php } ?>
+
                 <div class="masthead__btns mt-4">
                     <div class="d-flex justify-content-between">
                         <?php if ($masthead_button_one_link != null){ ?>

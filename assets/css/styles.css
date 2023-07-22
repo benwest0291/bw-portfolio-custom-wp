@@ -12,6 +12,15 @@ p {
   color: #CBD5E1;
 }
 
+.social__icon {
+  color: #ffffff;
+  font-size: 35px;
+  transition: ease-in-out 0.5s;
+}
+.social__icon:hover, .social__iconfocus {
+  color: #2DD4BF;
+}
+
 .text-block p:last-of-type {
   margin-bottom: 0;
 }
@@ -149,6 +158,40 @@ p {
 }
 .header__link {
   margin-top: 26px !important;
+}
+
+.footer {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  padding: 50px 0 80px 0;
+}
+.footer__heading {
+  color: #ffffff;
+}
+.footer__phone, .footer__mail {
+  color: #ffffff;
+  transition: ease-in-out 0.5s;
+}
+.footer__phone:hover, .footer__phonefocus, .footer__mail:hover, .footer__mailfocus {
+  color: #2DD4BF;
+}
+.footer__icon {
+  color: #ffffff;
+  font-size: 1.25rem;
+  padding: 10px;
+  border-radius: 24px;
+  background: #1E293B;
+  backdrop-filter: blur(5px);
+}
+.footer__social {
+  width: 30%;
+}
+.footer__link {
+  color: #ffffff;
+  transition: ease-in-out 0.5s;
+}
+.footer__link:hover, .footer__linkfocus {
+  color: #2DD4BF;
 }
 
 .masthead__top__heading {

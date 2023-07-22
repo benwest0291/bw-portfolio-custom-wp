@@ -27,7 +27,9 @@ if (isset($menuLocations['header'])) {
     <div class="container">
         <div class="row pt-1">
             <div class="col-12 col-md-6">
-                <a href="<?php echo site_url("/") ?>"><img class="header__logo mt-2" src="<?php echo $logo; ?>" alt="<?php echo get_bloginfo("name"); ?>"></img></a>
+                <?php if ($logo != null) { ?>
+                    <a href="<?php echo site_url("/") ?>"><img class="header__logo mt-2" src="<?php echo $logo; ?>" alt="<?php echo get_bloginfo("name"); ?>"></a>
+                <?php } ?>
             </div>
             <?php if (!empty($header_links)) { ?>
                 <div class="header__links__container col-12 col-md-6">
