@@ -242,7 +242,8 @@ p {
 }
 @media (min-width: 768px) {
   .masthead__top__heading {
-    margin-top: 170px;
+    margin-top: 150px;
+    font-size: 60px;
   }
 }
 .masthead__main__heading {
@@ -253,6 +254,11 @@ p {
 .masthead__main__heading span {
   font-weight: 700;
   color: #2DD4BF;
+}
+@media (min-width: 768px) {
+  .masthead__main__heading {
+    font-size: 60px;
+  }
 }
 .masthead__masthead__content {
   width: 90%;
@@ -298,7 +304,7 @@ p {
 }
 @media (min-width: 768px) {
   .tech__stack {
-    margin-bottom: 150px;
+    margin-bottom: 130px;
   }
 }
 .tech__stack__heading {

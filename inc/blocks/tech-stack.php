@@ -5,7 +5,7 @@ $images = get_field('tech_stack_images');
 <section class="tech__stack">
     <div class="container">
         <?php if($tech_stack_heading != null) { ?>
-            <h3 class="tech__stack__heading mb-3"><?php echo $tech_stack_heading; ?></h3>
+            <h3 class="tech__stack__heading mb-4"><?php echo $tech_stack_heading; ?></h3>
         <?php } ?>
         <div class="tech__stack__bubble">
             <?php if( $images != null ) { ?>

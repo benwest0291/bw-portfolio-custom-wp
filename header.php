@@ -12,7 +12,6 @@ if (isset($menuLocations['header'])) {
 
 <!DOCTYPE html>
 <html lang="<?php language_attributes(); ?>">
-
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +22,7 @@ if (isset($menuLocations['header'])) {
 </head>
 
 <body <?php body_class(); ?>>
+
 <header class="header">
     <div class="container">
         <div class="row pt-1">
