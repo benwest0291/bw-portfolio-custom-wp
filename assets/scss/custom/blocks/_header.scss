@@ -36,12 +36,18 @@
     cursor: pointer;
     font-size: 40px;
 
-    @include media-breakpoint-up(lg) {
+
+    @include media-breakpoint-up(md) {
       font-size: 18px;
+      margin-top: 50px;
     }
 
     &:hover, &focus{
       color: $green;
     }
+  }
+
+  &__link{
+    margin-top: 26px !important;
   }
 }

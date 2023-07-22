@@ -1,6 +1,7 @@
 body {
   background: #111827;
   font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -60,9 +61,11 @@ p {
 
 .btn__primary {
   background-color: #6366F1;
-  padding: 5px 20px;
+  padding: 10px 20px;
   border-radius: 30px;
-  transition: color 0.3s ease-in-out;
+  border-style: none;
+  color: #ffffff;
+  cursor: pointer;
 }
 .btn__primary__arrow {
   background-color: #2DD4BF;
@@ -74,6 +77,27 @@ p {
   margin: 0 -13px 0 12px;
 }
 .btn__primary:hover, .btn__primaryfocus {
+  background-color: #2DD4BF;
+  color: #ffffff;
+}
+
+.btn__secondary {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border-style: none;
+  color: #111827;
+  cursor: pointer;
+}
+.btn__secondary__download {
+  background-color: #2DD4BF;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0 -10px 0 12px;
+}
+.btn__secondary:hover, .btn__secondaryfocus {
   background-color: #2DD4BF;
   color: #ffffff;
 }
@@ -114,20 +138,29 @@ p {
   cursor: pointer;
   font-size: 40px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .header__links a {
     font-size: 18px;
+    margin-top: 50px;
   }
 }
 .header__links a:hover, .header__links afocus {
   color: #2DD4BF;
 }
+.header__link {
+  margin-top: 26px !important;
+}
 
 .masthead__top__heading {
-  margin-top: 150px;
+  margin-top: 50px;
   font-weight: 300;
   color: #ffffff;
   font-size: 60px;
+}
+@media (min-width: 768px) {
+  .masthead__top__heading {
+    margin-top: 150px;
+  }
 }
 .masthead__main__heading {
   font-weight: 300;
@@ -139,7 +172,41 @@ p {
   color: #2DD4BF;
 }
 .masthead__masthead__content {
-  width: 80%;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .masthead__masthead__content {
+    width: 50%;
+  }
+}
+.masthead__btns {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .masthead__btns {
+    width: 58%;
+  }
+}
+.masthead__bg {
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .masthead__bg {
+    height: 70%;
+    margin-left: -390px;
+  }
+}
+.masthead__image {
+  height: 80%;
+  width: 100%;
+  margin: 50px 0 0 20px;
+  overflow-x: hidden;
+}
+@media (min-width: 768px) {
+  .masthead__image {
+    height: 60%;
+    margin: 100px 0 0 120px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

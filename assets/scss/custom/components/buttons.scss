@@ -1,8 +1,10 @@
 .btn__primary{
   background-color: $purple;
-  padding: 5px 20px;
+  padding: 10px 20px;
   border-radius: 30px;
-  transition: color .3s ease-in-out;
+  border-style: none;
+  color: $white;
+  cursor: pointer;
 
   &__arrow{
     background-color: $green;
@@ -12,6 +14,29 @@
     color: $white;
     rotate: -40deg;
     margin: 0 -13px 0 12px;
+  }
+
+  &:hover, &focus{
+    background-color: $green;
+    color: $white;
+  }
+}
+
+.btn__secondary{
+  background-color: $white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border-style: none;
+  color: $blue;
+  cursor: pointer;
+
+  &__download{
+    background-color: $green;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 18px;
+    color: $white;
+    margin: 0 -10px 0 12px;
   }
 
   &:hover, &focus{

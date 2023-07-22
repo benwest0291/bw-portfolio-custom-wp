@@ -2,7 +2,8 @@
 
 body{
   background: $blue;
-  font-family: $font-family-sans-serif;
+  font-family: $font-family-base;
+  overflow-x: hidden;
 }
 
 // Links

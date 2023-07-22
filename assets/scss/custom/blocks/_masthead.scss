@@ -1,11 +1,14 @@
 .masthead{
 
-
   &__top__heading{
-    margin-top: 150px;
+    margin-top: 50px;
     font-weight: $font-weight-light;
     color:$white;
     font-size: 60px;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 150px;
+    }
   }
 
   &__main__heading{
@@ -20,6 +23,39 @@
   }
 
   &__masthead__content{
-    width: 80%;
+    width: 90%;
+
+    @include media-breakpoint-up(md) {
+      width: 50%;
+    }
+  }
+
+  &__btns{
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: 58%;
+    }
+  }
+
+  &__bg{
+    width: 90%;
+
+    @include media-breakpoint-up(md) {
+      height: 70%;
+      margin-left: -390px;
+    }
+  }
+
+  &__image{
+    height: 80%;
+    width: 100%;
+    margin: 50px 0 0 20px;
+    overflow-x: hidden;
+
+    @include media-breakpoint-up(md) {
+      height: 60%;
+      margin: 100px 0 0 120px;
+    }
   }
 }
