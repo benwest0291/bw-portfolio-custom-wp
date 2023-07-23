@@ -350,7 +350,7 @@ p {
 }
 @media (min-width: 768px) {
   .masthead__top__heading {
-    margin-top: 280px;
+    margin-top: 220px;
     font-size: 60px;
   }
 }
@@ -392,7 +392,7 @@ p {
 @media (min-width: 768px) {
   .masthead__bg {
     height: 80%;
-    margin-top: 130px;
+    margin-top: 100px;
     margin-left: -360px;
   }
 }
@@ -405,7 +405,7 @@ p {
 @media (min-width: 768px) {
   .masthead__image {
     height: 60%;
-    margin: 230px 0 0 120px;
+    margin: 180px 0 0 120px;
   }
 }
 
