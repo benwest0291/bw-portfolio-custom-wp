@@ -1,5 +1,9 @@
 // Body
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background: $blue;
   font-family: $font-family-base;

@@ -2,6 +2,8 @@
 // Menus
 $menuLocations = get_nav_menu_locations();
 $logo = get_theme_mod('logo');
+$linkedin = get_theme_mod('linkedin_url');
+$github = get_theme_mod('github_url');
 
 if (isset($menuLocations['header'])) {
     $header_links = wp_get_nav_menu_items($menuLocations['header']);
@@ -25,26 +27,42 @@ if (isset($menuLocations['header'])) {
 
 <header class="header">
     <div class="container">
+        <div class="navigation__burger">
+            <div class="line__one"></div>
+            <div class="line__two"></div>
+            <div class="line__three"></div>
+        </div>
         <div class="row pt-1">
             <div class="col-12 col-md-6">
                 <?php if ($logo != null) { ?>
-                    <a href="<?php echo site_url("/") ?>"><img class="header__logo mt-2" src="<?php echo $logo; ?>" alt="<?php echo get_bloginfo("name"); ?>"></a>
+                    <a href="<?php echo site_url("/") ?>"><img class="header__logo mt-1 mt-md-2" src="<?php echo $logo; ?>" alt="<?php echo get_bloginfo("name"); ?>"></a>
                 <?php } ?>
             </div>
             <?php if (!empty($header_links)) { ?>
-                <div class="header__links__container col-12 col-md-6">
+                <nav class="header__links__container col-12 col-md-6">
                     <ul class="header__links list-unstyled">
                         <?php foreach ($header_links as $item) { ?>
                             <li class="header__link m-1">
                                 <a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a>
                             </li>
                         <?php } ?>
-                        <li class="btn__primary header__links__contact m-1">
-                            <a href="contact">Get in touch <i class="fa-solid fa-arrow-right pl-1 btn__primary__arrow"></i></a>
-                        </li>
                     </ul>
-                </div>
+                    <div class="header__contact d-flex justify-content-center mt-3 d-md-none d-block">
+                        <div class="w-25">
+                            <div class="d-flex justify-content-between mt-2 ">
+                                <?php if($linkedin != null){ ?>
+                                    <a href="<?php echo $linkedin;?>" target="_blank"><i class="fa-brands fa-linkedin social__icon"></i></a>
+                                <?php } ?>
+
+                                <?php if($github != null){ ?>
+                                    <a href="<?php echo $github;?>" target="_blank"><i class="fa-brands fa-github social__icon"></i></a>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             <?php } ?>
         </div>
     </div>
 </header>
+

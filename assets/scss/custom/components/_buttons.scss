@@ -5,6 +5,11 @@
   border-style: none;
   color: $white;
   cursor: pointer;
+  min-width: 150px;
+
+  @include media-breakpoint-up(md) {
+    min-width: 170px;
+  }
 
   &__arrow{
     background-color: $green;
@@ -29,6 +34,11 @@
   border-style: none;
   color: $blue;
   cursor: pointer;
+  min-width: 165px;
+
+  @include media-breakpoint-up(md) {
+    min-width: 185px;
+  }
 
   &__download{
     background-color: $green;

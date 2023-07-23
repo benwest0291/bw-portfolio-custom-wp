@@ -1,27 +1,42 @@
 .header{
   background: rgba(0, 0, 0, 0.20);
   backdrop-filter: blur(5px);
+  padding-bottom: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 
   &__logo{
     width: 150px;
   }
 
   &__links__container{
+    position: fixed;
     padding-top: 80px;
+    right: -100%;
+    background: $blue;
+    backdrop-filter: blur(0px);
+    margin-top: 70px;
     height: 100vh;
-    top: -830%;
+    transition: right .5s ease-in;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       padding-top: 0;
       height: 100%;
-      top: 0;
+      right: 0;
+      height: 0;
+      position: relative;
+      background: rgba(0, 0, 0, 0.20);
+      backdrop-filter: blur(5px);
+      margin-top: 0;
+      transition: right 0s;
     }
   }
 
   &__links{
     text-align: center;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       display: flex;
       justify-content: end;
     }
@@ -35,7 +50,6 @@
     color: $white;
     cursor: pointer;
     font-size: 40px;
-
 
     @include media-breakpoint-up(md) {
       font-size: 18px;
@@ -51,3 +65,9 @@
     margin-top: 26px !important;
   }
 }
+// JS style
+
+.js__links__open{
+  right: 0;
+}
+
