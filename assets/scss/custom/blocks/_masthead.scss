@@ -4,7 +4,7 @@
     margin-top: 150px;
     font-weight: $font-weight-light;
     color:$white;
-    font-size: 40px;
+    font-size: 35px;
 
     @include media-breakpoint-up(md) {
       margin-top: 280px;
@@ -41,6 +41,7 @@
 
     @include media-breakpoint-up(md) {
       width: 58%;
+      margin-bottom: 150px;
     }
   }
 
@@ -49,8 +50,9 @@
 
     @include media-breakpoint-up(md) {
       height: 80%;
-      margin-top: 180px;
-      margin-left: -300px;
+      margin-top: 130px;
+      margin-left: -360px;
+
     }
   }
 
