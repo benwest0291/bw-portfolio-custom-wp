@@ -13,7 +13,7 @@ $email = get_theme_mod('contact_email');
         <div class="row">
             <div class="col-12 col-md-3">
                 <?php if ($logo != null) { ?>
-                    <a href="<?php echo site_url("/") ?>"><img class="header__logo mt-3" src="<?php echo $logo; ?>" alt="<?php echo get_bloginfo("name"); ?>"></a>
+                    <a href="<?php echo site_url("/") ?>"><img class="footer__logo mt-3" src="<?php echo $logo; ?>" alt="<?php echo get_bloginfo("name"); ?>"></a>
                 <?php } ?>
 
                 <?php if ($phone != null) { ?>

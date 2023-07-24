@@ -1,10 +1,10 @@
-<?php get_header();?>
+<?php get_header();
 
-<?php include("inc/blocks/masthead.php"); ?>
-<?php include("inc/blocks/tech-stack.php"); ?>
-<?php include("inc/blocks/about.php"); ?>
-<?php include("inc/blocks/projects.php"); ?>
-<?php include("inc/blocks/blog-slider.php"); ?>
+include("inc/blocks/masthead.php");
+include("inc/blocks/tech-stack.php");
+include("inc/blocks/about.php");
+include("inc/blocks/projects.php");
+include("inc/blocks/blog-slider.php");
 
-<?php get_footer(); ?>
+get_footer();?>
 
