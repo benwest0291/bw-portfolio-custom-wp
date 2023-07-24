@@ -5,7 +5,7 @@ $github = get_theme_mod('github_url');
 $info = get_theme_mod('website_info');
 $phone = get_theme_mod('contact_telephone');
 $email = get_theme_mod('contact_email');
-$email = get_theme_mod('contact_email');
+
 ?>
 
 <footer class="footer">
