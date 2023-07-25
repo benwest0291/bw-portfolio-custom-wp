@@ -1,8 +1,8 @@
 <?php
-$blog_heading = get_field('blog_heading');
-$blog_intro = get_field('blog_intro');
-$blog_button_text = get_field('blog_button_text');
-$blog_button_url = get_field('blog_button_url');
+$blog_heading = get_field('blog_heading', 'option');
+$blog_intro = get_field('blog_intro', 'option');
+$blog_button_text = get_field('blog_button_text', 'option');
+$blog_button_url = get_field('blog_button_url', 'option');
 ?>
 
 <section class="blog__slider">
@@ -18,7 +18,6 @@ $blog_button_url = get_field('blog_button_url');
                 <?php } ?>
             </div>
             <div class="col-12 col-md-6">
-
                     <div class="d-flex justify-content-md-end justify-content-start">
                         <?php if($blog_button_url != null) { ?>
                         <a class="btn__primary" href="<?php echo $blog_button_url; ?>"><?php echo $blog_button_text; ?><i class="fa-solid fa-arrow-right pl-1 btn__primary__arrow"></i></a>

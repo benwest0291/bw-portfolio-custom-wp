@@ -10,6 +10,8 @@ get_header();
 </section>
 
 <?php
+
 include("inc/blocks/blog-slider.php");
 
-get_footer(); ?>
+get_footer();
+?>
