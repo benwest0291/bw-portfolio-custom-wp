@@ -13,6 +13,7 @@
 @import "components/spinner";
 @import "components/navigation";
 @import "components/blog-card";
+@import "components/contact-form";
 
 // Blocks
 @import "../custom/blocks/header";
@@ -22,7 +23,8 @@
 @import "../custom/blocks/about";
 @import "../custom/blocks/projects";
 @import "../custom/blocks/blog-slider";
-@import "../custom/blocks/contact";
+
 
 // Templates
 @import "../custom/templates/error";
+@import "../custom/templates/contact";

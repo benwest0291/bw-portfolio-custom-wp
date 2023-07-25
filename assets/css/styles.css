@@ -201,7 +201,7 @@ p {
 .blog__card {
   width: 100%;
   cursor: pointer;
-  border-radius: 24px;
+  border-radius: 25px;
   background: #1E293B;
   backdrop-filter: blur(5px);
   transition: 0.3s;
@@ -238,6 +238,103 @@ p {
 }
 .blog__card__main {
   margin: 0 0 25px 25px;
+}
+
+.contact__form {
+  background-color: #6366F1;
+  border-radius: 25px;
+  padding: 50px 25px 25px 25px;
+  max-width: 100%;
+}
+.contact__form__heading {
+  color: #ffffff;
+}
+.contact__form__notice {
+  color: #ffffff;
+  margin-top: 15px;
+}
+.contact__form__terms {
+  margin-top: 30px;
+  color: #ffffff;
+}
+.contact__form__terms span {
+  color: #111827;
+}
+.contact__form__btn {
+  margin-top: 20px;
+  background-color: #2DD4BF;
+  color: #ffffff;
+  margin-bottom: 0;
+  transition: ease-in-out 0.5s;
+  padding: 15px;
+  font-size: 1.25rem;
+}
+.contact__form__btn:hover, .contact__form__btn:focus {
+  background-color: #111827;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: -20px;
+}
+
+.input-container i {
+  position: absolute;
+  top: 70%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #111827;
+  margin: 0;
+}
+
+.input-container input,
+.input-container select {
+  padding-left: 35px;
+}
+
+.input-container textarea {
+  padding: 10px;
+}
+
+.input-container select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E") no-repeat right 10px center;
+  background-size: 12px;
+}
+
+input, select {
+  width: 100%;
+  border-radius: 10px;
+  border-style: none;
+  padding: 10px;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 10px;
+  border-style: none;
+  height: 180px;
+  margin-top: 30px;
+}
+
+::placeholder {
+  color: #111827;
+}
+
+hr {
+  height: 2px;
+  background-color: #111827;
+  margin-bottom: -5px;
+}
+
+.wpcf7-response-output {
+  color: #ffffff;
+  border-color: #2DD4BF !important;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .header {
@@ -479,6 +576,22 @@ p {
   margin: 0 10px;
 }
 
+.error {
+  padding: 200px 0 30px 0;
+  background-size: 350px;
+  background-position: 50% 100px;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .error {
+    padding: 250px 0 50px 0;
+    background-size: 400px;
+  }
+}
+.error__heading, .error__subheading {
+  color: #ffffff;
+}
+
 .contact {
   padding-top: 100px;
 }
@@ -516,119 +629,6 @@ p {
   .contact__social__spacer {
     width: 10%;
   }
-}
-.contact__form {
-  background-color: #6366F1;
-  border-radius: 25px;
-  padding: 50px 25px 25px 25px;
-  max-width: 100%;
-}
-.contact__form__heading {
-  color: #ffffff;
-}
-.contact__notice {
-  color: #ffffff;
-  margin-top: 15px;
-}
-.contact__terms {
-  margin-top: 30px;
-  color: #ffffff;
-}
-.contact__terms span {
-  color: #2DD4BF;
-  font-weight: 600;
-}
-.contact__btn {
-  margin-top: 20px;
-  background-color: #2DD4BF;
-  color: #ffffff;
-  margin-bottom: 0;
-  transition: ease-in-out 0.5s;
-  padding: 15px;
-  font-size: 1.25rem;
-}
-.contact__btn:hover, .contact__btn:focus {
-  background-color: #111827;
-}
-
-.input-container {
-  position: relative;
-  margin-bottom: -20px;
-}
-
-.input-container i {
-  position: absolute;
-  top: 70%;
-  left: 10px;
-  transform: translateY(-50%);
-  pointer-events: none;
-  color: #111827;
-  margin: 0;
-}
-
-.input-container input,
-.input-container select {
-  padding-left: 35px;
-}
-
-.input-container textarea {
-  padding: 10px;
-}
-
-.input-container select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E") no-repeat right 10px center;
-  background-size: 12px;
-}
-
-input, select {
-  width: 100%;
-  border-radius: 10px;
-  border-style: none;
-  padding: 10px;
-}
-
-textarea {
-  width: 100%;
-  border-radius: 10px;
-  border-style: none;
-  height: 180px;
-  margin-top: 30px;
-}
-
-::placeholder {
-  color: #111827;
-}
-
-hr {
-  height: 2px;
-  background-color: #111827;
-  margin-bottom: -5px;
-}
-
-.wpcf7-response-output {
-  color: #ffffff;
-  border-color: #2DD4BF !important;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.error {
-  padding: 200px 0 30px 0;
-  background-size: 350px;
-  background-position: 50% 100px;
-  background-repeat: no-repeat;
-}
-@media (min-width: 768px) {
-  .error {
-    padding: 250px 0 50px 0;
-    background-size: 400px;
-  }
-}
-.error__heading, .error__subheading {
-  color: #ffffff;
 }
 
 /*# sourceMappingURL=styles.css.map */
