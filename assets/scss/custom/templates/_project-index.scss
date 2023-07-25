@@ -1,0 +1,12 @@
+.projects__index {
+
+  padding-top: 100px;
+  background-size: 350px;
+  background-position: 100% 60px;
+  background-repeat: no-repeat;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 190px;
+    background-size: 650px;
+  }
+}

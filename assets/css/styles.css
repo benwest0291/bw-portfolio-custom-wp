@@ -553,15 +553,15 @@ hr {
   }
 }
 
-.project {
+.projects {
   margin-bottom: 50px;
 }
 @media (min-width: 768px) {
-  .project {
+  .projects {
     margin-bottom: 150px;
   }
 }
-.project__heading {
+.projects__heading {
   color: #ffffff;
 }
 
@@ -628,6 +628,19 @@ hr {
 @media (min-width: 768px) {
   .contact__social__spacer {
     width: 10%;
+  }
+}
+
+.projects__index {
+  padding-top: 100px;
+  background-size: 350px;
+  background-position: 100% 60px;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .projects__index {
+    padding-top: 190px;
+    background-size: 650px;
   }
 }
 

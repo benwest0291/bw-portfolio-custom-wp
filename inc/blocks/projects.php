@@ -1,10 +1,16 @@
 <?php
 $projects_heading = get_field('projects_heading');
 ?>
+
 <section class="projects">
     <div class="container">
-        <h3 class="project__heading"><?php echo $projects_heading; ?></h3>
-        <?php
+
+        <?php if (is_page_template('template-projects.php') && ($projects_heading != null)){ ?>
+            <h1 class="projects__heading"><?php echo $projects_heading; ?></h1>
+        <?php } else { ?>
+            <h3 class="projects__heading"><?php echo $projects_heading; ?></h3>
+        <?php }
+
         $projects = new WP_Query(array(
             "posts_per_page" => 3,
             "post_type" => "projects",
