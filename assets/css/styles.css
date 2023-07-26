@@ -721,4 +721,35 @@ hr {
   color: #ffffff;
 }
 
+.posts__index {
+  padding-top: 100px;
+}
+@media (min-width: 768px) {
+  .posts__index {
+    padding-top: 190px;
+  }
+}
+.posts__index__heading, .posts__index__sm__heading, .posts__index__error {
+  color: #ffffff;
+}
+
+.page-numbers {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 0 2px 0 0;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 50px 0;
+  transition: ease-in-out 0.5s;
+}
+
+.page-numbers.current,
+a.page-numbers:hover {
+  background: #6366F1;
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=styles.css.map */
