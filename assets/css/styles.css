@@ -134,7 +134,7 @@ p {
   border-style: none;
   color: #ffffff;
   cursor: pointer;
-  min-width: 150px;
+  min-width: 175px;
 }
 @media (min-width: 768px) {
   .btn__third {
@@ -683,19 +683,26 @@ hr {
   color: #ffffff;
 }
 .project__image {
-  width: 100% !important;
-  height: 500px;
+  width: 100%;
+  height: 300px;
 }
-.project__bg {
-  width: 30%;
-  margin-top: -100px;
+@media (min-width: 768px) {
+  .project__image {
+    height: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .project__bg {
+    width: 35%;
+    margin-top: -130px;
+  }
 }
 .project__links {
   width: 40%;
 }
 @media (min-width: 768px) {
   .project__links {
-    width: 50%;
+    width: 40%;
   }
 }
 .project__tech__stack {

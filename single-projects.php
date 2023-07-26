@@ -9,9 +9,9 @@ $project_link = get_field('project_link');
 <section class="project">
     <div class="container">
         <div class="project__header">
-            <h1 class="project__heading mb-4"><?php the_title(); ?></h1>
-            <div class="project__links mb-4">
-                <div class="d-flex justify-content-between flex-column flex-lg-row mb-4">
+            <h1 class="project__heading mb-2 mb-md-4"><?php the_title(); ?></h1>
+            <div class="project__links mb-md-4">
+                <div class="d-flex justify-content-between flex-column flex-lg-row mb-md-4">
                     <?php if ($project_link != null){ ?>
                         <a class="btn__primary mb-1" href="<?php echo $project_link;?>" target="_blank">View Site<i class="fa-solid fa-arrow-right pl-1 btn__primary__arrow"></i></a>
                     <?php } ?>
@@ -30,17 +30,17 @@ $project_link = get_field('project_link');
                     <p><?php the_content(); ?></p>
                 </div>
                 <div class="col-12 col-md-5">
-                    <img class="project__bg position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/rays.svg);" alt="background image rays" />
+                    <img class="project__bg position-absolute d-none d-lg-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/rays.svg);" alt="background image rays" />
                     <img class="project__image position-relative" src="<?php echo the_post_thumbnail_url("post"); ?>">
                 </div>
             </div>
 
             <h3 class="project__tech__stack__heading">Tech Stack</h3>
-            <div class="project__tech__stack mt-5">
+            <div class="project__tech__stack mt-3 mt-md-5">
                 <?php if( $tech_images != null ) { ?>
                     <div class="d-flex justify-content-between flex-wrap">
                         <?php foreach( $tech_images as $tech_image ) { ?>
-                            <img class="project__tech__stack__image" src="<?php echo $tech_image['url']; ?>" alt="<?php echo esc_attr($tech_image['alt']); ?>" />
+                            <img class="project__tech__stack__image m-1" src="<?php echo $tech_image['url']; ?>" alt="<?php echo esc_attr($tech_image['alt']); ?>" />
                         <?php } ?>
                     </div>
                 <?php } ?>
