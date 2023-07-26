@@ -8,7 +8,7 @@
   min-width: 150px;
 
   @include media-breakpoint-up(md) {
-    min-width: 170px;
+    min-width: 25%;
   }
 
   &__arrow{
@@ -37,10 +37,10 @@
   min-width: 165px;
 
   @include media-breakpoint-up(md) {
-    min-width: 185px;
+    min-width: 25%;
   }
 
-  &__download{
+  &__download, &__github{
     background-color: $green;
     border-radius: 20px;
     padding: 5px;
@@ -52,5 +52,33 @@
   &:hover, &focus{
     background-color: $green;
     color: $white;
+  }
+}
+
+.btn__third{
+  background-color: $green;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border-style: none;
+  color: $white;
+  cursor: pointer;
+  min-width: 150px;
+
+  @include media-breakpoint-up(md) {
+    min-width: 20%;
+  }
+
+  &:hover, &focus{
+    background-color: $purple;
+    color: $white;
+  }
+
+  &__figma{
+    background-color: $purple;
+    border-radius: 20px;
+    padding: 5px 8px;
+    font-size: 18px;
+    color: $white;
+    margin: 0 -10px 0 12px;
   }
 }
