@@ -732,6 +732,14 @@ hr {
 .posts__index__heading, .posts__index__sm__heading, .posts__index__error {
   color: #ffffff;
 }
+.posts__index__content {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .posts__index__content {
+    width: 75%;
+  }
+}
 
 .page-numbers {
   display: inline-block;

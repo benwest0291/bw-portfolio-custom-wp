@@ -11,20 +11,20 @@ $index_error_message = get_field('index_error_message', 'option');
         <?php } ?>
 
         <?php if($index_content != null) { ?>
-            <p class="mb-3 w-75"><?php echo $index_content; ?></p>
+            <p class="posts__index__content mb-3"><?php echo $index_content; ?></p>
         <?php } ?>
             <div class="post__index__main">
                 <div class="row">
                         <?php if ( have_posts() ) { ?>
                             <?php while ( have_posts() ) :
                                 the_post(); ?>
-                                    <div class="col-12 col-md-4">
+                                    <div class="col-12 col-md-6 col-lg-4">
                                         <?php get_template_part("inc/partials/blog-card"); ?>
                                     </div>
                                 <?php
                             endwhile;
                         } else { ?>
-                            <div class="mt-4 mb-4">
+                            <div class="mt-md-4 mb-4">
                                 <?php if($index_error_message != null){ ?>
                                     <h5 class="posts__index__error mb-4"><?php echo $index_error_message; ?></h5>
                                 <?php } else { ?>

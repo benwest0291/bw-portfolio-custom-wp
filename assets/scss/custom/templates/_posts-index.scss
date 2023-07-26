@@ -9,6 +9,13 @@
   &__heading, &__sm__heading, &__error{
     color: $white;
   }
+
+  &__content{
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 75%;
+    }
+  }
 }
 
 // Pagination
