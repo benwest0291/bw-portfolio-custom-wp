@@ -1,9 +1,7 @@
 .projects{
 
-  margin-bottom: 50px;
-
   @include media-breakpoint-up(md) {
-    margin-bottom: 150px;
+    margin-bottom: 80px;
   }
 
   &__heading{

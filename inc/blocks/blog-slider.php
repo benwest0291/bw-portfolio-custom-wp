@@ -7,24 +7,26 @@ $blog_button_url = get_field('blog_button_url', 'option');
 
 <section class="blog__slider">
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <?php if($blog_heading != null) { ?>
-                    <h3 class="blog__slider__heading mb-3"><?php echo $blog_heading; ?></h3>
-                <?php } ?>
+        <?php if (!is_single()) { ?>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <?php if($blog_heading != null) { ?>
+                        <h3 class="blog__slider__heading mb-3"><?php echo $blog_heading; ?></h3>
+                    <?php } ?>
 
-                <?php if($blog_heading) { ?>
-                    <p><?php echo $blog_intro; ?></p>
-                <?php } ?>
+                    <?php if($blog_heading) { ?>
+                        <p><?php echo $blog_intro; ?></p>
+                    <?php } ?>
+                </div>
+                <div class="col-12 col-md-6">
+                        <div class="d-flex justify-content-md-end justify-content-start">
+                            <?php if($blog_button_url != null) { ?>
+                            <a class="btn__primary" href="<?php echo $blog_button_url; ?>"><?php echo $blog_button_text; ?><i class="fa-solid fa-arrow-right pl-1 btn__primary__arrow"></i></a>
+                        </div>
+                    <?php } ?>
+                </div>
             </div>
-            <div class="col-12 col-md-6">
-                    <div class="d-flex justify-content-md-end justify-content-start">
-                        <?php if($blog_button_url != null) { ?>
-                        <a class="btn__primary" href="<?php echo $blog_button_url; ?>"><?php echo $blog_button_text; ?><i class="fa-solid fa-arrow-right pl-1 btn__primary__arrow"></i></a>
-                    </div>
-                <?php } ?>
-            </div>
-        </div>
+        <?php } ?>
 
         <div class="blog__slider__wrapper">
             <div class="slider">

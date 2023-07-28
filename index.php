@@ -15,14 +15,13 @@ $index_error_message = get_field('index_error_message', 'option');
         <?php } ?>
             <div class="post__index__main">
                 <div class="row">
-                        <?php if ( have_posts() ) { ?>
-                            <?php while ( have_posts() ) :
-                                the_post(); ?>
-                                    <div class="col-12 col-md-6 col-lg-4">
-                                        <?php get_template_part("inc/partials/blog-card"); ?>
-                                    </div>
-                                <?php
-                            endwhile;
+                    <?php if ( have_posts() ) { ?>
+                        <?php while ( have_posts() ) {
+                            the_post(); ?>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <?php get_template_part("inc/partials/blog-card"); ?>
+                                </div>
+                        <?php }
                         } else { ?>
                             <div class="mt-md-4 mb-4">
                                 <?php if($index_error_message != null){ ?>
@@ -34,7 +33,7 @@ $index_error_message = get_field('index_error_message', 'option');
                             </div>
                         <?php
                         };
-                        ?>
+                    ?>
                 </div>
             </div>
         <?php echo paginate_links(); ?>
