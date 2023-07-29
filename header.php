@@ -61,8 +61,11 @@ if (isset($menuLocations['header'])) {
                         </div>
                     </div>
                 </nav>
-            <?php } ?>
+            <?php
+            } ?>
         </div>
     </div>
 </header>
+
+
 

@@ -386,6 +386,10 @@ hr {
   border-radius: 25px;
 }
 
+.modal-content {
+  background-color: transparent;
+}
+
 .close {
   margin-bottom: -70px;
   background-color: transparent;
@@ -471,6 +475,15 @@ hr {
 }
 .header__link {
   margin-top: 26px !important;
+  padding: 5px 10px;
+}
+@media (min-width: 768px) {
+  .header__link:last-child {
+    background-color: #6366F1;
+    padding: 5px 25px;
+    border-radius: 50px;
+    transition: 0.5s ease-in;
+  }
 }
 
 .js__links__open {
@@ -563,9 +576,10 @@ hr {
 }
 @media (min-width: 768px) {
   .masthead__bg {
-    height: 80%;
+    width: 80%;
+    height: 70%;
     margin-top: 90px;
-    margin-left: -460px;
+    margin-left: -360px;
   }
 }
 .masthead__image {

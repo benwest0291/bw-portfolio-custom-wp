@@ -63,6 +63,16 @@
 
   &__link{
     margin-top: 26px !important;
+    padding: 5px 10px;
+
+    @include media-breakpoint-up(md) {
+      &:last-child {
+        background-color: $purple;
+        padding: 5px 25px;
+        border-radius: $border-radius;
+        transition: .5s ease-in;
+      }
+    }
   }
 }
 // JS style
