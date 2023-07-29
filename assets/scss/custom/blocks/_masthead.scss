@@ -2,7 +2,7 @@
 
   &__top__heading{
     margin-top: 150px;
-    font-weight: $font-weight-light;
+    font-weight: $font-weight-base;
     color:$white;
     font-size: 35px;
 
@@ -13,12 +13,12 @@
   }
 
   &__main__heading{
-    font-weight: $font-weight-light;
+    font-weight: $font-weight-base;
     color:$white;
     font-size: 55px;
 
     span{
-      font-weight: $font-weight-bold;
+      font-weight: $font-weight-semibold;
       color: $green;
     }
 
@@ -50,8 +50,8 @@
 
     @include media-breakpoint-up(md) {
       height: 80%;
-      margin-top: 110px;
-      margin-left: -360px;
+      margin-top: 90px;
+      margin-left: -460px;
 
     }
   }
@@ -64,7 +64,7 @@
 
     @include media-breakpoint-up(md) {
       height: 60%;
-      margin: 200px 0 0 120px;
+      margin: 200px 0 0 80px;
     }
   }
 }

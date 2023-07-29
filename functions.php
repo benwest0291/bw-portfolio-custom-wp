@@ -109,3 +109,27 @@ if( function_exists('acf_add_options_page') ) {
     acf_add_options_page();
 
 }
+
+/**
+ *
+ * Masthead
+ *
+ */
+function render_masthead($prefix = "", $args = array())
+{
+    $defaults = array(
+        "masthead_top_heading" => get_field($prefix . "_masthead_top_heading"),
+        "masthead_main_heading" => get_field($prefix . "_masthead_main_heading"),
+        "masthead_content" => get_field($prefix . "_masthead_content"),
+        "masthead_button_one_text" => get_field($prefix . "_masthead_button_one_text"),
+        "masthead_button_one_link" => get_field($prefix . "_masthead_button_one_link"),
+        "masthead_button_two_text" => get_field($prefix . "_masthead_button_two_text"),
+        "masthead_button_two_link" => get_field($prefix . "_masthead_button_two_link"),
+        "masthead_image" => get_field($prefix . "_masthead_image")
+    );
+
+    $data = array_merge($defaults, $args);
+
+    include(get_template_directory() . "/inc/blocks/masthead.php");
+    unset($data);
+}

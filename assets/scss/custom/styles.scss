@@ -15,6 +15,7 @@
 @import "components/blog-card";
 @import "components/contact-form";
 @import "components/enquiry-modal";
+@import "components/service-card";
 
 // Blocks
 @import "../custom/blocks/header";
@@ -25,7 +26,7 @@
 @import "../custom/blocks/projects";
 @import "../custom/blocks/blog-slider";
 @import "../custom/blocks/services";
-@import "../custom/blocks/faq";
+@import "../custom/blocks/accordion";
 
 // Templates
 @import "../custom/templates/error";

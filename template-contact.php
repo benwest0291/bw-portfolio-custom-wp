@@ -61,7 +61,7 @@ $formShortcode = '[contact-form-7 id="' . $form->ID . '"]';
                     <?php } ?>
                 </div>
 
-                <div class="contact__socail mt-5">
+                <div class="contact__socail mt-5 mb-5">
                     <?php if($social_heading != null) { ?>
                         <h3 class="contact__social__heading"><?php echo $social_heading;?></h3>
                     <?php } ?>
@@ -79,7 +79,7 @@ $formShortcode = '[contact-form-7 id="' . $form->ID . '"]';
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
                <?php include("inc/partials/contact-form.php"); ?>
             </div>
         </div>

@@ -276,8 +276,13 @@ p {
 .contact__form {
   background-color: #6366F1;
   border-radius: 25px;
-  padding: 50px 25px 25px 25px;
   max-width: 100%;
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  .contact__form {
+    padding: 50px 25px 25px 25px;
+  }
 }
 .contact__form__heading {
   color: #ffffff;
@@ -368,6 +373,40 @@ hr {
   border-color: #2DD4BF !important;
   padding: 10px;
   border-radius: 5px;
+}
+
+.modal {
+  margin: 20px 0 50px 0;
+  background-color: transparent;
+  border-radius: 25px;
+}
+
+.modal-body {
+  background-color: transparent;
+  border-radius: 25px;
+}
+
+.close {
+  margin-bottom: -70px;
+  background-color: transparent;
+}
+
+.btn-close {
+  cursor: pointer;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.service__card {
+  border-radius: 24px;
+  background: #1E293B;
+  backdrop-filter: blur(5px);
+  padding: 35px;
+  height: 100%;
+}
+.service__card__heading {
+  color: #ffffff;
+  margin-top: 35px;
 }
 
 .header {
@@ -477,7 +516,7 @@ hr {
 
 .masthead__top__heading {
   margin-top: 150px;
-  font-weight: 300;
+  font-weight: 400;
   color: #ffffff;
   font-size: 35px;
 }
@@ -488,12 +527,12 @@ hr {
   }
 }
 .masthead__main__heading {
-  font-weight: 300;
+  font-weight: 400;
   color: #ffffff;
   font-size: 55px;
 }
 .masthead__main__heading span {
-  font-weight: 700;
+  font-weight: 600;
   color: #2DD4BF;
 }
 @media (min-width: 768px) {
@@ -525,8 +564,8 @@ hr {
 @media (min-width: 768px) {
   .masthead__bg {
     height: 80%;
-    margin-top: 110px;
-    margin-left: -360px;
+    margin-top: 90px;
+    margin-left: -460px;
   }
 }
 .masthead__image {
@@ -538,7 +577,7 @@ hr {
 @media (min-width: 768px) {
   .masthead__image {
     height: 60%;
-    margin: 200px 0 0 120px;
+    margin: 200px 0 0 80px;
   }
 }
 
@@ -606,6 +645,41 @@ hr {
 
 .slick-slide {
   margin: 0 10px;
+}
+
+.services__heading {
+  color: #ffffff;
+}
+
+.accordion__heading {
+  color: #ffffff;
+}
+.accordion__item {
+  cursor: pointer;
+  background: #1E293B !important;
+  backdrop-filter: blur(5px);
+  margin-bottom: 15px;
+  border-radius: 25px;
+}
+.accordion__question {
+  background: #1E293B !important;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  color: #ffffff;
+  border-radius: 25px 25px;
+}
+.accordion__arrow {
+  background-color: #2DD4BF;
+  border-radius: 25px;
+  padding: 5px 6px;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 23px;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(90deg);
 }
 
 .error {
@@ -826,6 +900,12 @@ a.page-numbers:hover {
 }
 .post__share__icons i:hover, .post__share__icons i:focus {
   color: #2DD4BF;
+}
+
+@media (min-width: 768px) {
+  .freelance__information {
+    margin-right: 30%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

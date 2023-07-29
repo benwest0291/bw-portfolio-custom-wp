@@ -1,6 +1,6 @@
 <?php get_header();
 
-include("inc/blocks/masthead.php");
+render_masthead("masthead_homepage");
 
 include("inc/blocks/tech-stack.php");
 

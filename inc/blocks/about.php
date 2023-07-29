@@ -2,7 +2,7 @@
 $about_heading = get_field('about_heading');
 $about_content = get_field('about_content')
 ?>
-<section class="about">
+<section class="about" id="about-nav">
     <div class="container">
         <?php if($about_heading != null ) { ?>
             <h3 class="about__heading text-center mb-5"><?php echo $about_heading; ?></h3>
