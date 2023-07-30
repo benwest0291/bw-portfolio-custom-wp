@@ -2,10 +2,10 @@
 $accordion_heading = get_field('accordion_heading');
 
 if (have_rows('accordion')) { ?>
-    <section class="faq">
+    <section class="accordion">
         <div class="container">
-            <h3 class="accordion__heading mb-3"><?php echo $accordion_heading;?></h3>
-            <div class="accordion" >
+            <h3 class="accordion__heading mb-5"><?php echo $accordion_heading;?></h3>
+            <div class="accordion__block" >
                 <?php
                 $index = 0; // Initialize an index variable to generate unique IDs
                 while (have_rows('accordion')) {

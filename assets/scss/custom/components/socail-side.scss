@@ -1,0 +1,35 @@
+.social__side{
+
+
+  @include media-breakpoint-up(md) {
+    position: relative;
+    float: right;
+    right: 20px;
+    top: 400px;
+    animation-duration: 2s;
+  }
+
+  &__icons{
+    border-radius: 25px;
+    background: #1E293B;
+    backdrop-filter: blur(5px);
+    padding: 20px 12px;
+  }
+}
+
+.bounce{
+  animation-name: bounce;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce{
+  0%    { transform: translateY(0); }
+  10%   { transform: translateY(-10px); } /* Starts moving up */
+  30%   { transform: translateY(-30px); } /* Floating up */
+  50%   { transform: translateY(-50px); } /* Floating up */
+  70%   { transform: translateY(-30px); } /* Floating down */
+  90%   { transform: translateY(-10px); } /* Floating down */
+  100%  { transform: translateY(0); }    /* Back to the original position */
+}

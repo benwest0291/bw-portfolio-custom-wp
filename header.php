@@ -67,5 +67,7 @@ if (isset($menuLocations['header'])) {
     </div>
 </header>
 
+<?php include("inc/partials/social-side.php"); ?>
+
 
 

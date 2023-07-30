@@ -4,6 +4,11 @@
 
     @include media-breakpoint-up(md) {
       margin-right: 30%;
+      margin: 80px 0;
     }
+  }
+
+  &__contact{
+    margin: 60px 0;
   }
 }

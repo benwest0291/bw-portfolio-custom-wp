@@ -112,6 +112,12 @@ if( function_exists('acf_add_options_page') ) {
 
 /**
  *
+ * Reusable blocks
+ *
+ */
+
+/**
+ *
  * Masthead
  *
  */
@@ -131,5 +137,23 @@ function render_masthead($prefix = "", $args = array())
     $data = array_merge($defaults, $args);
 
     include(get_template_directory() . "/inc/blocks/masthead.php");
+    unset($data);
+}
+
+/**
+ *
+ * Text Block
+ *
+ */
+function render_text($prefix = "", $args = array())
+{
+    $defaults = array(
+        "text_heading" => get_field($prefix . "_text_heading"),
+        "text_content" => get_field($prefix . "_text_content"),
+    );
+
+    $data = array_merge($defaults, $args);
+
+    include(get_template_directory() . "/inc/blocks/text.php");
     unset($data);
 }

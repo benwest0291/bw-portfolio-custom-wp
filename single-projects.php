@@ -49,6 +49,8 @@ $project_link = get_field('project_link');
     </div>
 </section>
 
+
 <?php
+
 include("inc/blocks/blog-slider.php");
 get_footer();

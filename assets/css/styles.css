@@ -413,6 +413,52 @@ hr {
   margin-top: 35px;
 }
 
+@media (min-width: 768px) {
+  .social__side {
+    position: relative;
+    float: right;
+    right: 20px;
+    top: 400px;
+    animation-duration: 2s;
+  }
+}
+.social__side__icons {
+  border-radius: 25px;
+  background: #1E293B;
+  backdrop-filter: blur(5px);
+  padding: 20px 12px;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-10px);
+  } /* Starts moving up */
+  30% {
+    transform: translateY(-30px);
+  } /* Floating up */
+  50% {
+    transform: translateY(-50px);
+  } /* Floating up */
+  70% {
+    transform: translateY(-30px);
+  } /* Floating down */
+  90% {
+    transform: translateY(-10px);
+  } /* Floating down */
+  100% {
+    transform: translateY(0);
+  } /* Back to the original position */
+}
 .header {
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
@@ -576,8 +622,8 @@ hr {
 }
 @media (min-width: 768px) {
   .masthead__bg {
-    width: 80%;
-    height: 70%;
+    width: 70%;
+    height: 65%;
     margin-top: 90px;
     margin-left: -360px;
   }
@@ -592,6 +638,7 @@ hr {
   .masthead__image {
     height: 60%;
     margin: 200px 0 0 80px;
+    width: 85%;
   }
 }
 
@@ -619,23 +666,24 @@ hr {
   transform: translate(0, -15px);
 }
 
-.about {
+.text {
   margin-bottom: 50px;
 }
 @media (min-width: 768px) {
-  .about {
+  .text {
     margin-bottom: 150px;
   }
 }
-.about__heading {
+.text__heading {
   color: #ffffff;
 }
-.about__content {
+.text__content {
   line-height: 1.5;
 }
 @media (min-width: 768px) {
-  .about__content {
+  .text__content {
     margin: 0 150px;
+    line-height: 1.5;
   }
 }
 
@@ -665,6 +713,14 @@ hr {
   color: #ffffff;
 }
 
+.accordion {
+  margin: 40px 0;
+}
+@media (min-width: 768px) {
+  .accordion {
+    margin: 90px 0;
+  }
+}
 .accordion__heading {
   color: #ffffff;
 }
@@ -919,7 +975,11 @@ a.page-numbers:hover {
 @media (min-width: 768px) {
   .freelance__information {
     margin-right: 30%;
+    margin: 80px 0;
   }
+}
+.freelance__contact {
+  margin: 60px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -4,7 +4,7 @@ render_masthead("masthead_homepage");
 
 include("inc/blocks/tech-stack.php");
 
-include("inc/blocks/about.php");
+render_text("home_page_text");
 
 include("inc/blocks/projects.php");
 

@@ -15,7 +15,6 @@ $linkedin = get_theme_mod('linkedin_url');
 $github = get_theme_mod('github_url');
 $form = get_field("contact_form");
 
-
 if ($form != null) {
 $formShortcode = '[contact-form-7 id="' . $form->ID . '"]';
 }

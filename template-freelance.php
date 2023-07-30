@@ -20,9 +20,11 @@ include("inc/blocks/services.php"); ?>
         <?php } ?>
 
         <?php if ($freelance_button_text != null){ ?>
-            <a class="btn__primary" data-bs-toggle="modal" data-bs-target="#enquiryModal">
-                <?php echo $freelance_button_text; ?><i class="fa-solid fa-arrow-right pl-1 btn__primary__arrow"></i>
-            </a>
+            <div class="freelance__contact">
+                <a class="btn__primary" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+                    <?php echo $freelance_button_text; ?><i class="fa-solid fa-arrow-right pl-1 btn__primary__arrow"></i>
+                </a>
+            </div>
         <?php }
 
         include("inc/partials/enquiry-modal.php");
