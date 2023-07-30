@@ -6,7 +6,7 @@
             <h6 class="error__heading text-center">404 ERROR</h6>
             <h2 class="error__subheading text-center">Whoops, this wasn’t supposed to happen 😱</h2>
             <div class="d-flex justify-content-center mt-5">
-                <a class="btn__primary" href="<?php echo site_url("/") ?>">Back to homepage</a>
+                <a title="Ben West dev homepage" class="btn__primary" href="<?php echo site_url("/") ?>">Back to homepage</a>
             </div>
         </div>
     </div>

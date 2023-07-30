@@ -28,11 +28,11 @@ $masthead_button_two_link = $data['masthead_button_two_link'];
                 <div class="masthead__btns mt-4">
                     <div class="d-flex justify-content-between">
                         <?php if ($masthead_button_one_text && $masthead_button_one_link != null){ ?>
-                            <a href="<?php echo $masthead_button_one_link; ?>" class="btn__primary"><?php echo $masthead_button_one_text; ?><i class="fa-solid fa-arrow-right pl-1 btn__primary__arrow"></i></a>
+                            <a title="<?php echo $masthead_button_one_text; ?>" href="<?php echo $masthead_button_one_link; ?>" class="btn__primary"><?php echo $masthead_button_one_text; ?></a>
                         <?php } ?>
 
                         <?php if ($masthead_button_two_text && $masthead_button_two_link != null){ ?>
-                            <a href="<?php echo $masthead_button_two_link; ?>" class="btn__secondary"><?php echo $masthead_button_two_text; ?><i class="fa-solid fa-download btn__secondary__download"></i></a>
+                            <a title="<?php echo $masthead_button_two_text; ?>" href="<?php echo $masthead_button_two_link; ?>" class="btn__secondary"><?php echo $masthead_button_two_text; ?></a>
                         <?php } ?>
                     </div>
                 </div>

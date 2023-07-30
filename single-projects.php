@@ -13,15 +13,15 @@ $project_link = get_field('project_link');
             <div class="project__links mb-md-4">
                 <div class="d-flex justify-content-between flex-column flex-lg-row mb-md-4">
                     <?php if ($project_link != null){ ?>
-                        <a class="btn__primary mb-1" href="<?php echo $project_link;?>" target="_blank">View Site<i class="fa-solid fa-arrow-right pl-1 btn__primary__arrow"></i></a>
+                        <a title="Project link" class="btn__primary mb-1" href="<?php echo $project_link;?>" target="_blank">View Site</a>
                     <?php } ?>
 
                     <?php if ($code_link != null){ ?>
-                         <a class="btn__secondary mb-1" href="<?php echo $code_link; ?>" target="_blank">View Code<i class="fa-brands fa-github btn__secondary__github"></i></a>
+                         <a title="Code link" class="btn__secondary mb-1" href="<?php echo $code_link; ?>" target="_blank">View Code</a>
                     <?php } ?>
 
                     <?php if ($figma_link != null){ ?>
-                        <a class="btn__third mb-1" href="<?php echo $figma_link; ?>" target="_blank">View Design<i class="fa-brands fa-figma pl-1 btn__third__figma"></i></a>
+                        <a title="Figma link" class="btn__third mb-1" href="<?php echo $figma_link; ?>" target="_blank">View Design</a>
                     <?php } ?>
                 </div>
             </div>
@@ -49,8 +49,8 @@ $project_link = get_field('project_link');
     </div>
 </section>
 
-
 <?php
 
 include("inc/blocks/blog-slider.php");
+
 get_footer();

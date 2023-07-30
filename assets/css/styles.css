@@ -74,56 +74,34 @@ p {
 
 .btn__primary {
   background-color: #6366F1;
-  padding: 10px 20px;
-  border-radius: 30px;
+  padding: 10px 30px;
+  border-radius: 50px;
   border-style: none;
   color: #ffffff;
   cursor: pointer;
-  min-width: 150px;
+  transition: 0.5s ease-in-out;
+  min-width: 165px;
+  text-align: center;
 }
-@media (min-width: 768px) {
-  .btn__primary {
-    min-width: 25%;
-  }
-}
-.btn__primary__arrow {
-  background-color: #2DD4BF;
-  border-radius: 20px;
-  padding: 5px;
-  font-size: 18px;
-  color: #ffffff;
-  rotate: -40deg;
-  margin: 0 -13px 0 12px;
-}
-.btn__primary:hover, .btn__primaryfocus {
+.btn__primary:hover, .btn__primary:focus {
   background-color: #2DD4BF;
   color: #ffffff;
 }
 
 .btn__secondary {
-  background-color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 30px;
-  border-style: none;
-  color: #111827;
-  cursor: pointer;
-  min-width: 165px;
-}
-@media (min-width: 768px) {
-  .btn__secondary {
-    min-width: 25%;
-  }
-}
-.btn__secondary__download, .btn__secondary__github {
-  background-color: #2DD4BF;
-  border-radius: 20px;
-  padding: 5px;
-  font-size: 18px;
+  background-color: #111827;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
   color: #ffffff;
-  margin: 0 -10px 0 12px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  min-width: 165px;
+  text-align: center;
 }
-.btn__secondary:hover, .btn__secondaryfocus {
+.btn__secondary:hover, .btn__secondary:focus {
   background-color: #2DD4BF;
+  border: 1px solid #2DD4BF;
   color: #ffffff;
 }
 
@@ -134,24 +112,13 @@ p {
   border-style: none;
   color: #ffffff;
   cursor: pointer;
-  min-width: 175px;
+  transition: 0.5s ease-in-out;
+  min-width: 165px;
+  text-align: center;
 }
-@media (min-width: 768px) {
-  .btn__third {
-    min-width: 20%;
-  }
-}
-.btn__third:hover, .btn__thirdfocus {
+.btn__third:hover, .btn__third:focus {
   background-color: #6366F1;
   color: #ffffff;
-}
-.btn__third__figma {
-  background-color: #6366F1;
-  border-radius: 20px;
-  padding: 5px 8px;
-  font-size: 18px;
-  color: #ffffff;
-  margin: 0 -10px 0 12px;
 }
 
 .project__card {
@@ -423,7 +390,7 @@ hr {
   }
 }
 .social__side__icons {
-  border-radius: 25px;
+  border-radius: 50px;
   background: #1E293B;
   backdrop-filter: blur(5px);
   padding: 20px 12px;
@@ -509,6 +476,7 @@ hr {
   color: #ffffff;
   cursor: pointer;
   font-size: 40px;
+  transition: 0.5s ease-in-out;
 }
 @media (min-width: 768px) {
   .header__links a {
@@ -523,13 +491,21 @@ hr {
   margin-top: 26px !important;
   padding: 5px 10px;
 }
-@media (min-width: 768px) {
-  .header__link:last-child {
-    background-color: #6366F1;
-    padding: 5px 25px;
-    border-radius: 50px;
-    transition: 0.5s ease-in;
-  }
+.header__link:last-child {
+  background-color: #6366F1;
+  border-radius: 50px;
+  border-style: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+  min-width: 110px;
+}
+.header__link:last-child a {
+  color: #ffffff;
+}
+.header__link:last-child:hover, .header__link:last-child:focus {
+  background-color: #2DD4BF !important;
 }
 
 .js__links__open {
@@ -622,10 +598,10 @@ hr {
 }
 @media (min-width: 768px) {
   .masthead__bg {
-    width: 70%;
-    height: 65%;
+    width: 75%;
+    height: 80%;
     margin-top: 90px;
-    margin-left: -360px;
+    margin-left: -300px;
   }
 }
 .masthead__image {
@@ -826,6 +802,7 @@ hr {
 @media (min-width: 768px) {
   .project {
     padding-top: 190px;
+    margin-bottom: 100px;
   }
 }
 .project__heading {

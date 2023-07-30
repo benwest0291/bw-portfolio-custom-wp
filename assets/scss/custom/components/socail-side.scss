@@ -1,6 +1,5 @@
 .social__side{
 
-
   @include media-breakpoint-up(md) {
     position: relative;
     float: right;
@@ -10,7 +9,7 @@
   }
 
   &__icons{
-    border-radius: 25px;
+    border-radius: $border-radius;;
     background: #1E293B;
     backdrop-filter: blur(5px);
     padding: 20px 12px;

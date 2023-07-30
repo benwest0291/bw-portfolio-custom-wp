@@ -29,7 +29,7 @@ $index_error_message = get_field('index_error_message', 'option');
                                 <?php } else { ?>
                                     <h5 class="posts__index__error mb-4">Whoops! Sorry, That was not supposed to happen</h5>
                                 <?php } ?>
-                                <a class="btn__primary" href="<?php echo site_url("/") ?>">Return to homepage</a>
+                                <a title="Ben West dev homepage" class="btn__primary" href="<?php echo site_url("/") ?>">Return to homepage</a>
                             </div>
                         <?php
                         };

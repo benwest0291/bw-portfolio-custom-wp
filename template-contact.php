@@ -33,7 +33,7 @@ $formShortcode = '[contact-form-7 id="' . $form->ID . '"]';
                 <?php } ?>
 
                 <?php if($button_text != null){ ?>
-                    <a class="btn__secondary" href="<?php echo $button_url; ?>"><?php echo $button_text; ?><i class="fa-solid fa-download btn__secondary__download"></i></a>
+                    <a class="btn__secondary" href="<?php echo $button_url; ?>"><?php echo $button_text; ?></a>
                 <?php } ?>
 
                 <div class="contact__information">
@@ -67,11 +67,11 @@ $formShortcode = '[contact-form-7 id="' . $form->ID . '"]';
                     <div class="contact__social__spacer">
                         <div class="d-flex justify-content-between mt-2">
                             <?php if($linkedin != null){ ?>
-                                <a href="<?php echo $linkedin;?>" target="_blank"><i class="fa-brands fa-linkedin social__icon"></i></a>
+                                <a title="Ben Wests Linkedin" href="<?php echo $linkedin;?>" target="_blank"><i class="fa-brands fa-linkedin social__icon"></i></a>
                             <?php } ?>
 
                             <?php if($github != null){ ?>
-                                <a href="<?php echo $github;?>" target="_blank"><i class="fa-brands fa-github social__icon"></i></a>
+                                <a title="Ben Wests Github"  href="<?php echo $github;?>" target="_blank"><i class="fa-brands fa-github social__icon"></i></a>
                             <?php } ?>
                         </div>
                     </div>

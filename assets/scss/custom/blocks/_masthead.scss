@@ -49,10 +49,10 @@
     width: 90%;
 
     @include media-breakpoint-up(md) {
-      width: 70%;
-      height: 65%;
+      width: 75%;
+      height: 80%;
       margin-top: 90px;
-      margin-left: -360px;
+      margin-left: -300px;
     }
   }
 

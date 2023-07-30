@@ -13,20 +13,20 @@ $email = get_theme_mod('contact_email');
         <div class="row">
             <div class="col-12 col-md-3">
                 <?php if ($logo != null) { ?>
-                    <a href="<?php echo site_url("/") ?>"><img class="footer__logo mt-3" src="<?php echo $logo; ?>" alt="<?php echo get_bloginfo("name"); ?>"></a>
+                    <a title="Ben West Dev homepage" href="<?php echo site_url("/") ?>"><img class="footer__logo mt-3" src="<?php echo $logo; ?>" alt="<?php echo get_bloginfo("name"); ?>"></a>
                 <?php } ?>
 
                 <?php if ($phone != null) { ?>
                     <div class="mt-3">
                         <i class="fa-solid fa-phone footer__icon"></i>
-                        <a class="footer__phone" href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
+                        <a title="Ben West phone number" class="footer__phone" href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
                     </div>
                 <?php } ?>
 
                 <?php if ($email != null) { ?>
                     <div class="mt-3">
                         <i class="fa-solid fa-envelope footer__icon"></i>
-                        <a class="footer__mail" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
+                        <a title="Ben West email" class="footer__mail" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
                     </div>
                 <?php } ?>
             </div>
@@ -45,7 +45,7 @@ $email = get_theme_mod('contact_email');
                         $posts->the_post();
                         ?>
                             <li class="mb-2">
-                                <a class="footer__link" href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a>
+                                <a title="<?php the_title();?>" class="footer__link" href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a>
                             </li>
                         <?php
                     }
@@ -68,7 +68,7 @@ $email = get_theme_mod('contact_email');
                         $projects->the_post();
                         ?>
                         <li class="mb-2">
-                            <a class="footer__link" href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a>
+                            <a title="<?php the_title();?>" class="footer__link" href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a>
                         </li>
                         <?php
                     }
@@ -82,11 +82,11 @@ $email = get_theme_mod('contact_email');
                 <div class="footer__social">
                     <div class="d-flex justify-content-between mt-2">
                         <?php if($linkedin != null){ ?>
-                            <a href="<?php echo $linkedin;?>" target="_blank"><i class="fa-brands fa-linkedin social__icon"></i></a>
+                            <a title="Linkedin" href="<?php echo $linkedin;?>" target="_blank"><i class="fa-brands fa-linkedin social__icon"></i></a>
                         <?php } ?>
 
                         <?php if($github != null){ ?>
-                            <a href="<?php echo $github;?>" target="_blank"><i class="fa-brands fa-github social__icon"></i></a>
+                            <a title="Github" href="<?php echo $github;?>" target="_blank"><i class="fa-brands fa-github social__icon"></i></a>
                         <?php } ?>
                     </div>
                 </div>

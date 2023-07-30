@@ -35,7 +35,7 @@ if (isset($menuLocations['header'])) {
         <div class="row pt-1">
             <div class="col-12 col-md-6">
                 <?php if ($logo != null) { ?>
-                    <a href="<?php echo site_url("/") ?>"><img class="header__logo mt-1 mt-md-2" src="<?php echo $logo; ?>" alt="<?php echo get_bloginfo("name"); ?>"></a>
+                    <a title="Ben West dev homepage" href="<?php echo site_url("/") ?>"><img class="header__logo mt-1 mt-md-2" src="<?php echo $logo; ?>" alt="<?php echo get_bloginfo("name"); ?>"></a>
                 <?php } ?>
             </div>
             <?php if (!empty($header_links)) { ?>
@@ -43,7 +43,7 @@ if (isset($menuLocations['header'])) {
                     <ul class="header__links list-unstyled">
                         <?php foreach ($header_links as $item) { ?>
                             <li class="header__link m-1">
-                                <a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a>
+                                <a title="<?php echo $item->title; ?>" href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a>
                             </li>
                         <?php } ?>
                     </ul>
@@ -51,11 +51,11 @@ if (isset($menuLocations['header'])) {
                         <div class="w-25">
                             <div class="d-flex justify-content-between mt-2 ">
                                 <?php if($linkedin != null){ ?>
-                                    <a href="<?php echo $linkedin;?>" target="_blank"><i class="fa-brands fa-linkedin social__icon"></i></a>
+                                    <a title="Linkedin" href="<?php echo $linkedin;?>" target="_blank"><i class="fa-brands fa-linkedin social__icon"></i></a>
                                 <?php } ?>
 
                                 <?php if($github != null){ ?>
-                                    <a href="<?php echo $github;?>" target="_blank"><i class="fa-brands fa-github social__icon"></i></a>
+                                    <a title="Github"  href="<?php echo $github;?>" target="_blank"><i class="fa-brands fa-github social__icon"></i></a>
                                 <?php } ?>
                             </div>
                         </div>

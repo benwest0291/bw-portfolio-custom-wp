@@ -16,7 +16,7 @@ $tech_images = get_field('tech_stack');
                         </div>
                     <?php } ?>
                 </div>
-            <a class="btn__secondary" href="<?php echo the_permalink(); ?>">View project<i class="fa-solid fa-arrow-right pl-1 btn__primary__arrow"></i></a>
+            <a class="btn__secondary" href="<?php echo the_permalink(); ?>">View project</a>
         </div>
         <div class="col-12 col-md-6">
             <div class="d-flex justify-content-end">
