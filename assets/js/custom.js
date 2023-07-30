@@ -32,7 +32,32 @@ jQuery(function ($) {
                 }
             }]
     });
+
+    // Project slider
+
+    $('.projects__slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: true,
+        prevArrow: false,
+        nextArrow: false,
+        responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+    });
 });
+
+
 
 // Accordion arrow animation
 

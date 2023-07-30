@@ -51,6 +51,6 @@ $project_link = get_field('project_link');
 
 <?php
 
-include("inc/blocks/blog-slider.php");
+include("inc/blocks/project-slider.php");
 
 get_footer();

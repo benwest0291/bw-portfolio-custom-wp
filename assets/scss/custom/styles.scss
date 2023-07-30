@@ -12,10 +12,12 @@
 @import "components/project-card";
 @import "components/navigation";
 @import "components/blog-card";
+@import "components/project-slider-card";
 @import "components/contact-form";
 @import "components/enquiry-modal";
 @import "components/service-card";
-@import "components/socail-side";
+@import "components/sociall-side";
+
 
 // Blocks
 @import "../custom/blocks/header";
@@ -25,6 +27,7 @@
 @import "../custom/blocks/text";
 @import "../custom/blocks/projects";
 @import "../custom/blocks/blog-slider";
+@import "../custom/blocks/project-slider";
 @import "../custom/blocks/services";
 @import "../custom/blocks/accordion";
 

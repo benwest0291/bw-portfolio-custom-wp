@@ -1,0 +1,14 @@
+.project__slider{
+
+  @include media-breakpoint-up(md) {
+    margin: 25px 0;
+  }
+
+  &__heading {
+    color: $white;
+  }
+}
+
+.slick-slide {
+  margin: 0 10px;
+}
