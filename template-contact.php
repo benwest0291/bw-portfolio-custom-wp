@@ -33,7 +33,7 @@ $formShortcode = '[contact-form-7 id="' . $form->ID . '"]';
                 <?php } ?>
 
                 <?php if($button_text != null){ ?>
-                    <a class="btn__secondary" href="<?php echo $button_url; ?>"><?php echo $button_text; ?></a>
+                    <a class="btn__secondary" target="_blank" href="<?php echo $button_url; ?>"><?php echo $button_text; ?></a>
                 <?php } ?>
 
                 <div class="contact__information">
