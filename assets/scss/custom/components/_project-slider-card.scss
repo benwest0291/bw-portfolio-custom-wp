@@ -9,6 +9,13 @@
 
   &:hover, &:focus{
     transform: translate(0, -20px);
+
+    .effect{
+      transition: 0.5s ease-in;
+      background-color: $green;
+      border: 1px solid $green;
+      color: $white;
+    }
   }
 
   &__image{

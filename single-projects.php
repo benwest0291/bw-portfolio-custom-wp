@@ -35,7 +35,7 @@ $project_link = get_field('project_link');
                 </div>
             </div>
 
-            <h3 class="project__tech__stack__heading">Tech Stack</h3>
+            <h3 class="project__tech__stack__heading">Tech Stack Used</h3>
             <div class="project__tech__stack mt-3 mt-md-5">
                 <?php if( $tech_images != null ) { ?>
                     <div class="d-flex justify-content-between flex-wrap">

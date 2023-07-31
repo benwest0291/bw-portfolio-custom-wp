@@ -19,6 +19,31 @@ p{
   color: #CBD5E1;
 }
 
+h3, h4,h5,h6,{
+  color: $white;
+  line-height: $line-height-base;
+}
+
+ul{
+  color: #CBD5E1;
+  li{
+    line-height: $line-height-base;
+  }
+}
+
+.projects li::before {
+  content: "\2022";
+  color: $green;
+  font-weight: $font-weight-bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+span{
+  color: $green;
+}
+
 .social__icon{
   color: $white;
   font-size: 35px;
@@ -59,11 +84,6 @@ p{
 
 .text-inherit {
   color: inherit !important;
-}
-
-// Bgs
-.bg-green {
-  background-color: $blue !important;
 }
 
 // Animate Cards
