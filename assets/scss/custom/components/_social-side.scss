@@ -1,7 +1,7 @@
 .social__side{
 
   @include media-breakpoint-up(md) {
-    position: relative;
+    position: fixed;
     float: right;
     right: 20px;
     top: 400px;
