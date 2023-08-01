@@ -51,6 +51,7 @@
     cursor: pointer;
     font-size: 40px;
     transition: 0.5s ease-in-out;
+
     @include media-breakpoint-up(md) {
       font-size: 18px;
       margin-top: 50px;
@@ -65,22 +66,25 @@
     margin-top: 26px !important;
     padding: 5px 10px;
 
-    &:last-child {
-      background-color: $purple;
-      border-radius: $border-radius;
-      border-style: none;
-      color: $white;
-      cursor: pointer;
-      transition: 0.5s ease-in-out;
-      text-align: center;
-      min-width: 110px;
 
-      a {
+    @include media-breakpoint-up(md) {
+      &:last-child {
+        background-color: $purple;
+        border-radius: $border-radius;
+        border-style: none;
         color: $white;
-      }
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        text-align: center;
+        min-width: 110px;
 
-      &:hover, &:focus {
-        background-color: $green !important;
+        a {
+          color: $white;
+        }
+
+        &:hover, &:focus {
+          background-color: $green !important;
+        }
       }
     }
   }

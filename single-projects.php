@@ -2,7 +2,6 @@
 get_header();
 $tech_images = get_field('tech_stack');
 $code_link = get_field('code_link');
-$figma_link = get_field('figma_link');
 $project_link = get_field('project_link');
 ?>
 
@@ -10,24 +9,20 @@ $project_link = get_field('project_link');
     <div class="container">
         <div class="project__header">
             <h1 class="project__heading mb-2 mb-md-4"><?php the_title(); ?></h1>
-            <div class="project__links mb-md-4">
-                <div class="d-flex justify-content-between flex-column flex-lg-row mb-md-4">
-                    <?php if ($project_link != null){ ?>
-                        <a title="Project link" class="btn__primary mb-1" href="<?php echo $project_link;?>" target="_blank">View Site</a>
-                    <?php } ?>
-
-                    <?php if ($code_link != null){ ?>
-                         <a title="Code link" class="btn__secondary mb-1" href="<?php echo $code_link; ?>" target="_blank">View Code</a>
-                    <?php } ?>
-
-                    <?php if ($figma_link != null){ ?>
-                        <a title="Figma link" class="btn__third mb-1" href="<?php echo $figma_link; ?>" target="_blank">View Design</a>
-                    <?php } ?>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-12 col-md-7">
-                    <p><?php the_content(); ?></p>
+                    <div class="project__links mb-md-4">
+                        <div class="d-flex justify-content-between flex-column flex-lg-row mb-md-4">
+                            <?php if ($project_link != null){ ?>
+                                <a title="Project link" class="btn__primary mb-1" href="<?php echo $project_link;?>" target="_blank">View Site</a>
+                            <?php } ?>
+
+                            <?php if ($code_link != null){ ?>
+                                <a title="Code link" class="btn__secondary mb-1" href="<?php echo $code_link; ?>" target="_blank">View Code</a>
+                            <?php } ?>
+                        </div>
+                    </div>
+                    <?php the_content(); ?>
                 </div>
                 <div class="col-12 col-md-5">
                     <img class="project__bg position-absolute d-none d-lg-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/rays.svg);" alt="background image rays" />

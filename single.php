@@ -9,8 +9,8 @@
                     <div class="post__details d-flex justify-content-md-end">
                         <?php echo get_avatar( get_the_author_meta( 'ID' ), 52 );  ?>
                         <div class="d-flex justify-content-between flex-column">
-                            <p>Author: <strong><?php the_author(); ?></strong></p>
-                            <p>Posted: <strong><?php echo get_the_date(); ?></strong></p>
+                            <p>Author: <strong class="text-white"><?php the_author(); ?></strong></p>
+                            <p>Posted: <strong class="text-white"><?php echo get_the_date(); ?></strong></p>
                         </div>
                     </div>
                 </div>

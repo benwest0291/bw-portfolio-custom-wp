@@ -30,11 +30,7 @@
   }
 
   &__links{
-    width: 40%;
-
-    @include media-breakpoint-up(md) {
-      width: 40%;
-    }
+    width: 50%;
   }
 
   &__tech__stack{
