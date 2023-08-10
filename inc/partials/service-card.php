@@ -6,7 +6,7 @@ $content = get_sub_field('content');
 
 <div class="service__card">
     <?php if ($icon != null ){ ?>
-        <img src="<?php echo $icon['url']; ?>">
+        <img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>" >
     <?php } ?>
 
     <?php if ($heading != null ){ ?>

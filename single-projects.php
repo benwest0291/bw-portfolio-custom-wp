@@ -26,7 +26,7 @@ $project_link = get_field('project_link');
                 </div>
                 <div class="col-12 col-md-5">
                     <img class="project__bg position-absolute d-none d-lg-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/rays.svg);" alt="background image rays" />
-                    <img class="project__image position-relative" src="<?php echo the_post_thumbnail_url("post"); ?>">
+                    <img class="project__image position-relative" src="<?php echo the_post_thumbnail_url("post"); ?>" alt="<?php echo the_title(); ?>">
                 </div>
             </div>
 

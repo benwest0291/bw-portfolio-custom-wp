@@ -21,7 +21,7 @@ $tech_images = get_field('tech_stack');
             </div>
             <div class="col-12 col-md-6">
                 <div class="d-flex justify-content-end">
-                    <img class="project__card__image" src="<?php echo the_post_thumbnail_url("post"); ?>">
+                    <img class="project__card__image" src="<?php echo the_post_thumbnail_url("post"); ?>" alt="<?php echo the_title(); ?>">
                 </div>
             </div>
         </div>
