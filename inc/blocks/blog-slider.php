@@ -19,7 +19,7 @@ $blog_button_url = get_field('blog_button_url', 'option');
                     <?php } ?>
                 </div>
                 <div class="col-12 col-md-6">
-                        <div class="d-flex justify-content-md-end justify-content-start">
+                        <div class="d-flex justify-content-md-end justify-content-start mt-2">
                             <?php if($blog_button_url != null) { ?>
                             <a title="<?php echo $blog_button_text; ?>"  class="btn__primary" href="<?php echo $blog_button_url; ?>"><?php echo $blog_button_text; ?></a>
                         </div>
@@ -28,7 +28,7 @@ $blog_button_url = get_field('blog_button_url', 'option');
             </div>
         <?php } ?>
 
-        <div class="blog__slider__wrapper">
+        <div class="blog__slider__wrapper mt-2">
             <div class="slider">
                 <?php
                     $posts = new WP_Query(array(

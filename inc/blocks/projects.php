@@ -13,7 +13,7 @@ $projects_heading = get_field('projects_heading');
             "posts_per_page" => 3,
             "post_type" => "projects",
             "orderby" => "meta_value_num",
-            "order" => "DSC"
+            "order" => "ASC"
         ));
         while ($projects->have_posts()) {
             $projects->the_post();

@@ -13,7 +13,7 @@
         </div>
         <div class="blog__card__main pb-4">
             <h4 class="blog__card__headin mb-3"><?php echo the_title(); ?></h4>
-            <a title="<?php echo the_title(); ?>" class="btn__secondary effect mb-2" href="<?php echo the_permalink(); ?>">Read more</a>
+            <a title="<?php echo the_title(); ?>" class="btn__secondary effect mb-2" href="<?php echo the_permalink(); ?>">Read more<span class="blog__card__reader__text">Read more</span></a>
         </div>
     </a>
 </div>

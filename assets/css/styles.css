@@ -211,6 +211,20 @@ span {
 .project__card__tech:hover, .project__card__tech:focus {
   transform: translate(0, -10px);
 }
+.project__card__reader__text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  word-break: normal;
+}
 
 .navigation__burger {
   display: block;
@@ -292,6 +306,20 @@ span {
 .blog__card__main {
   margin: 0 0 25px 25px;
 }
+.blog__card__reader__text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  word-break: normal;
+}
 
 .project__slider__card {
   width: 100%;
@@ -333,6 +361,20 @@ span {
 }
 .project__slider__card__main {
   margin: 0 0 25px 25px;
+}
+.project__slider__card__reader__text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  word-break: normal;
 }
 
 .contact__form {
@@ -607,7 +649,12 @@ hr {
 .footer {
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
-  padding: 50px 0 80px 0;
+  padding: 50px 0 45px 0;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding: 50px 0 80px 0;
+  }
 }
 .footer__logo {
   width: 180px;
@@ -742,7 +789,7 @@ hr {
 .text {
   margin-bottom: 50px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .text {
     margin-bottom: 150px;
   }
@@ -753,7 +800,7 @@ hr {
 .text__content {
   line-height: 1.5;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .text__content {
     margin: 0 150px;
   }
@@ -842,6 +889,7 @@ hr {
   background-size: 350px;
   background-position: 50% 100px;
   background-repeat: no-repeat;
+  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   .error {

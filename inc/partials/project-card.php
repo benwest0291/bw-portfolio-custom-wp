@@ -17,7 +17,7 @@ $tech_images = get_field('tech_stack');
                             </div>
                         <?php } ?>
                     </div>
-                <a title="<?php echo the_title(); ?>" class="btn__secondary effect" href="<?php echo the_permalink(); ?>">View project</a>
+                <a title="<?php echo the_title(); ?>" class="btn__secondary effect" href="<?php echo the_permalink(); ?>">View project<span class="project__card__reader__text">View project</span></a>
             </div>
             <div class="d-none d-xl-block col-lg-6">
                 <div class="d-flex justify-content-end">
