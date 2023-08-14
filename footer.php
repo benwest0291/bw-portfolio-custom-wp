@@ -11,7 +11,7 @@ $email = get_theme_mod('contact_email');
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-lg-6 col-xl-3">
                 <?php if ($logo != null) { ?>
                     <a title="Ben West Dev homepage" href="<?php echo site_url("/") ?>"><img class="footer__logo mt-3" src="<?php echo $logo; ?>" alt="<?php echo get_bloginfo("name"); ?>"></a>
                 <?php } ?>
@@ -31,7 +31,7 @@ $email = get_theme_mod('contact_email');
                 <?php } ?>
             </div>
 
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-lg-6 col-xl-3">
                 <h3 class="footer__heading mt-3">Blog</h3>
                 <ul class="list-unstyled mt-4">
                     <?php
@@ -54,7 +54,7 @@ $email = get_theme_mod('contact_email');
                 </ul>
             </div>
 
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-lg-6 col-xl-3">
                 <h3 class="footer__heading mt-3">Projects</h3>
                 <ul class="list-unstyled mt-4">
                     <?php
@@ -77,7 +77,7 @@ $email = get_theme_mod('contact_email');
                 </ul>
             </div>
 
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-lg-6 col-xl-3">
                 <h3 class="footer__heading mt-3">Connect</h3>
                 <div class="footer__social">
                     <div class="d-flex justify-content-between mt-2">

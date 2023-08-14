@@ -34,7 +34,11 @@
   }
 
   &__social{
-    width: 30%;
+      width: 18%;
+
+    @include media-breakpoint-up(lg) {
+      width: 30%;
+    }
   }
 
   &__link{

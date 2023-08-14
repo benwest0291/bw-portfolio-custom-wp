@@ -44,6 +44,14 @@ jQuery(function ($) {
         nextArrow: false,
         responsive: [
             {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
                 breakpoint: 800,
                 settings: {
                     arrows: false,
@@ -65,6 +73,14 @@ jQuery(function ($) {
         prevArrow: false,
         nextArrow: false,
         responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
             {
                 breakpoint: 800,
                 settings: {
