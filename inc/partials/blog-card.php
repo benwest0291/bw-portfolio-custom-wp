@@ -11,9 +11,9 @@
                 <p class="blog__card__date"><?php echo get_the_date(); ?></p>
             </div>
         </div>
-        <div class="blog__card__main pb-2">
-            <h4 class="blog__card__headin mb-2"><?php echo the_title(); ?></h4>
-            <a title="<?php echo the_title(); ?>" class="btn__secondary effect mb-3" href="<?php echo the_permalink(); ?>">Read more</a>
+        <div class="blog__card__main pb-4">
+            <h4 class="blog__card__headin mb-3"><?php echo the_title(); ?></h4>
+            <a title="<?php echo the_title(); ?>" class="btn__secondary effect mb-2" href="<?php echo the_permalink(); ?>">Read more</a>
         </div>
     </a>
 </div>

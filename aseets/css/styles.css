@@ -1,12 +1,11 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Nanum+Gothic:wght@400;700;800&family=Open+Sans&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Sofia&display=swap");
 html {
   scroll-behavior: smooth;
 }
 
 body {
   background: #111827;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--bs-font-sans-serif);
   overflow-x: hidden;
 }
 
@@ -95,14 +94,6 @@ span {
   padding-top: 0 !important;
 }
 
-.wp__link {
-  color: #2DD4BF !important;
-}
-
-.input-container i {
-  z-index: 200;
-}
-
 .btn__primary {
   background-color: #6366F1;
   padding: 10px 30px;
@@ -153,18 +144,13 @@ span {
 }
 
 .project__card {
-  padding: 0px 20px 40px 30px;
+  padding: 150px 0 0 50px;
   border-radius: 24px;
   background: #1E293B;
   backdrop-filter: blur(5px);
-  margin-bottom: 50px;
+  margin: 50px 0;
   transition: 0.5s ease-in;
   cursor: pointer;
-}
-@media (min-width: 992px) {
-  .project__card {
-    padding: 10px 0 0 50px;
-  }
 }
 .project__card:hover .effect, .project__card:focus .effect {
   transition: 0.5s ease-in;
@@ -176,10 +162,8 @@ span {
   color: #ffffff;
   margin-top: 35px;
 }
-@media (min-width: 1200px) {
-  .project__card__content {
-    margin-right: 50px;
-  }
+.project__card__content {
+  margin-right: 50px;
 }
 .project__card__image {
   width: 100%;
@@ -339,7 +323,12 @@ span {
   background-color: #6366F1;
   border-radius: 25px;
   max-width: 100%;
-  padding: 25px 25px 10px 25px;
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  .contact__form {
+    padding: 50px 25px 25px 25px;
+  }
 }
 .contact__form__heading {
   color: #ffffff;
@@ -356,9 +345,10 @@ span {
   color: #111827;
 }
 .contact__form__btn {
-  margin-top: 5px;
+  margin-top: 20px;
   background-color: #2DD4BF;
   color: #ffffff;
+  margin-bottom: 0;
   transition: ease-in-out 0.5s;
   padding: 15px;
   font-size: 1.25rem;
@@ -529,7 +519,7 @@ hr {
 }
 .header__links__container {
   position: fixed;
-  padding-top: 25px;
+  padding-top: 50px;
   right: -100%;
   background: #111827;
   backdrop-filter: blur(0px);
@@ -704,7 +694,7 @@ hr {
 }
 @media (min-width: 768px) {
   .masthead__image {
-    height: 75%;
+    height: 60%;
     margin: 200px 0 0 80px;
     width: 85%;
   }
@@ -726,11 +716,6 @@ hr {
   border-radius: 24px;
   background: #1E293B;
   backdrop-filter: blur(5px);
-}
-@media (min-width: 768px) {
-  .tech__stack__bubble {
-    padding: 15px 20px;
-  }
 }
 .tech__stack__image {
   transition: 0.3s;

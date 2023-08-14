@@ -21,6 +21,16 @@ if (isset($menuLocations['header'])) {
     <meta name="description" content="<?php bloginfo('description'); ?>"/>
     <?php wp_head(); ?>
     <title><?php wp_title(); ?></title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHN2E0YZ2V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DHN2E0YZ2V');
+    </script>
+    <!-- End of Google tag (gtag.js) -->
 </head>
 
 <body <?php body_class(); ?>>

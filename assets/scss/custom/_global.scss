@@ -1,12 +1,12 @@
 // Body
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Nanum+Gothic:wght@400;700;800&family=Open+Sans&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Sofia&display=swap');
 html{
   scroll-behavior: smooth;
 }
 
 body{
   background: $blue;
-  font-family: $font-family-base;
+  font-family: 'Raleway', sans-serif;
   overflow-x: hidden;
 }
 
@@ -106,4 +106,14 @@ span{
     padding-top: 0 !important;
   }
 }
+
+.wp__link{
+  color: #2DD4BF !important;
+}
+
+.input-container i{
+  z-index: 200;
+}
+
+
 
