@@ -9,7 +9,7 @@ $images = get_field('tech_stack_images');
         <?php } ?>
         <div class="tech__stack__bubble">
             <?php if( $images != null ) { ?>
-                <div class="d-flex justify-content-between flex-wrap">
+                <div class="d-flex justify-content-between justify-content-md-evenly justify-content-lg-between flex-wrap">
                     <?php foreach( $images as $image ) { ?>
                         <img class="tech__stack__image m-1" src="<?php echo $image['url']; ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                     <?php } ?>

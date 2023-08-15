@@ -11,22 +11,22 @@ $project_link = get_field('project_link');
             <h1 class="project__heading mb-2 mb-md-4"><?php the_title(); ?></h1>
             <div class="row">
                 <div class="col-12 col-md-7">
-                    <div class="project__links mb-md-4">
-                        <div class="d-flex justify-content-between flex-column flex-lg-row mb-md-4">
-                            <?php if ($project_link != null){ ?>
-                                <a title="Project link" class="btn__primary mb-1" href="<?php echo $project_link;?>" target="_blank">View Site</a>
-                            <?php } ?>
+                    <div class="mb-md-4">
+                        <?php if ($project_link != null){ ?>
+                            <a title="Project link" class="btn__primary project__link mb-1" href="<?php echo $project_link;?>" target="_blank">View Site</a>
+                        <?php } ?>
 
-                            <?php if ($code_link != null){ ?>
-                                <a title="Code link" class="btn__secondary mb-1" href="<?php echo $code_link; ?>" target="_blank">View Code</a>
-                            <?php } ?>
-                        </div>
+                        <?php if ($code_link != null){ ?>
+                            <a title="Code link" class="btn__secondary project__link mb-1" href="<?php echo $code_link; ?>" target="_blank">View Code</a>
+                        <?php } ?>
                     </div>
                     <?php the_content(); ?>
                 </div>
-                <div class="col-12 col-md-5">
+                <div class="col-12 col-md-5 ">
                     <img class="project__bg position-absolute d-none d-lg-block" src="<?php echo get_template_directory_uri(); ?>/assets/images/rays.svg);" alt="background image rays" />
-                    <img class="project__image position-relative" src="<?php echo the_post_thumbnail_url("post"); ?>" alt="<?php echo the_title(); ?>">
+                    <div class="project__screenshot__container">
+                        <img class="project__screenshot" src="<?php echo the_post_thumbnail_url("post"); ?>" alt="<?php echo the_title(); ?>">
+                    </div>
                 </div>
             </div>
 
@@ -49,3 +49,5 @@ $project_link = get_field('project_link');
 include("inc/blocks/project-slider.php");
 
 get_footer();
+
+

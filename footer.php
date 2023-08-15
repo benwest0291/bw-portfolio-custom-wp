@@ -80,13 +80,13 @@ $email = get_theme_mod('contact_email');
             <div class="col-12 col-lg-6 col-xl-3">
                 <h3 class="footer__heading mt-3">Connect</h3>
                 <div class="footer__social">
-                    <div class="d-flex justify-content-between mt-2">
+                    <div class="mt-2">
                         <?php if($linkedin != null){ ?>
-                            <a title="Linkedin" href="<?php echo $linkedin;?>" target="_blank"><i class="fa-brands fa-linkedin social__icon"></i></a>
+                            <a title="Linkedin" href="<?php echo $linkedin;?>" target="_blank" class="footer__social__link"><i class="fa-brands fa-linkedin social__icon test"></i></a>
                         <?php } ?>
 
                         <?php if($github != null){ ?>
-                            <a title="Github" href="<?php echo $github;?>" target="_blank"><i class="fa-brands fa-github social__icon"></i></a>
+                            <a title="Github" href="<?php echo $github;?>" target="_blank" class="footer__social__link"><i class="fa-brands fa-github social__icon "></i></a>
                         <?php } ?>
                     </div>
                 </div>

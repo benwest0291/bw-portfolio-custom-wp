@@ -9,7 +9,6 @@ const navSlide = () => {
 
 burger.addEventListener("click", navSlide);
 
-
 // Accordion arrow animation
 
 let accordionHeaders = document.querySelectorAll('.accordion__header');
@@ -44,6 +43,14 @@ jQuery(function ($) {
         nextArrow: false,
         responsive: [
             {
+                breakpoint: 1200,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
                 breakpoint: 1024,
                 settings: {
                     arrows: false,
@@ -52,14 +59,15 @@ jQuery(function ($) {
                 }
             },
             {
-                breakpoint: 800,
+                breakpoint: 900,
                 settings: {
                     arrows: false,
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
-            }]
-    });
+            }
+            ]
+        });
 
     // Project slider
     $('.projects__slider').slick({
@@ -74,6 +82,14 @@ jQuery(function ($) {
         nextArrow: false,
         responsive: [
             {
+                breakpoint: 1200,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
                 breakpoint: 1024,
                 settings: {
                     arrows: false,
@@ -82,13 +98,47 @@ jQuery(function ($) {
                 }
             },
             {
-                breakpoint: 800,
+                breakpoint: 900,
                 settings: {
                     arrows: false,
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
-            }]
-    });
+            }
+            ]
+        });
 });
 
+// Scroll project on small cards
+
+// Select all project screenshot containers
+const projectScreenshotContainers = document.querySelectorAll(".project__card__screenshot__container");
+
+// Loop over each container and attach the event listener
+projectScreenshotContainers.forEach(container => {
+    const projectScreenshotImage = container.querySelector(".project__card__screenshot");
+
+    if (projectScreenshotImage) {
+        projectScreenshotImage.addEventListener("mouseover", () => {
+            const imageHeight = projectScreenshotImage.clientHeight;
+            const containerHeight = container.clientHeight;
+            const stopScrollPosition = imageHeight - (containerHeight * 1.0);
+            container.style.setProperty("--scroll-distance", `${stopScrollPosition}px`);
+        });
+    }
+});
+
+
+// Scroll project slider
+
+const screenshotContainer = document.querySelector(".project__screenshot__container");
+const screenshotImage = document.querySelector(".project__screenshot");
+
+if(screenshotImage){
+    screenshotImage.addEventListener("mouseover", () => {
+        const imageHeight = screenshotImage.clientHeight;
+        const containerHeight = screenshotContainer.clientHeight;
+        const stopScrollPosition = imageHeight - (containerHeight * 1.0);
+        screenshotContainer.style.setProperty("--scroll-distance", `${stopScrollPosition}px`);
+    });
+}

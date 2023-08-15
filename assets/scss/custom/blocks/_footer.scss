@@ -33,12 +33,8 @@
     backdrop-filter: blur(5px);
   }
 
-  &__social{
-      width: 18%;
-
-    @include media-breakpoint-up(lg) {
-      width: 30%;
-    }
+  &__social__link + &__social__link{
+    margin-left: 15px;
   }
 
   &__link{
