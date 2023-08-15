@@ -12,7 +12,7 @@ $masthead_button_two_link = $data['masthead_button_two_link'];
 <section class="masthead">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <?php if ($masthead_top_heading != null){ ?>
                     <h1 class="masthead__top__heading"><?php echo $masthead_top_heading; ?></h1>
                 <?php } ?>
@@ -38,7 +38,7 @@ $masthead_button_two_link = $data['masthead_button_two_link'];
                 </div>
             </div>
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <img class="masthead__bg position-absolute" src="<?php echo get_template_directory_uri(); ?>/assets/images/rays.svg);" alt="background image rays" />
                 <?php if ($masthead_image != null){ ?>
                     <img class="masthead__image position-relative" src="<?php echo $masthead_image['url']; ?>" alt="<?php echo esc_attr($masthead_image['alt']); ?>"  />

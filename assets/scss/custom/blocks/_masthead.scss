@@ -49,6 +49,12 @@
     width: 90%;
 
     @include media-breakpoint-up(md) {
+      margin-top: -90px;
+      width: 80%;
+      height: 50%;
+    }
+
+    @include media-breakpoint-up(lg) {
       width: 75%;
       height: 80%;
       margin-top: 90px;
@@ -63,6 +69,12 @@
     overflow-x: hidden;
 
     @include media-breakpoint-up(md) {
+      width: 85%;
+      height: 100%;
+      margin: -80px 0 0 80px;
+    }
+
+    @include media-breakpoint-up(lg) {
       height: 75%;
       margin: 200px 0 0 80px;
       width: 85%;
