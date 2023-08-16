@@ -66,7 +66,7 @@
   &__image{
     height: 80%;
     width: 100%;
-    margin: 50px 0 0 20px;
+    margin: 50px 0 0 -8px;
     overflow-x: hidden;
 
     @include media-breakpoint-up(md) {
