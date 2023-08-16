@@ -26,6 +26,8 @@
 
   &__image{
     transition: 0.3s;
+    width: 80px;
+    height: 80px;
 
     &:hover, &:focus{
       transform: translate(0, -15px);

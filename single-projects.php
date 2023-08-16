@@ -11,7 +11,7 @@ $project_link = get_field('project_link');
             <h1 class="project__heading mb-2 mb-md-4"><?php the_title(); ?></h1>
             <div class="row">
                 <div class="col-12 col-md-7">
-                    <div class="mb-md-4 mb-2">
+                    <div class="mb-4 mt-2 mt-md-1">
                         <?php if ($project_link != null){ ?>
                             <a title="Project link" class="btn__primary project__link mb-1" href="<?php echo $project_link;?>" target="_blank">View Site</a>
                         <?php } ?>

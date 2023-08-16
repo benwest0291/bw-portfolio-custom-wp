@@ -4,9 +4,7 @@ get_header();
 ?>
 
 <section class="projects__index" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/rays.svg););">
-    <div class="container">
-        <?php include("inc/blocks/projects.php"); ?>
-    </div>
+    <?php include("inc/blocks/projects.php"); ?>
 </section>
 
 <?php
