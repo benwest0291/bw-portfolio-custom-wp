@@ -31,6 +31,7 @@ if (isset($menuLocations['header'])) {
         gtag('config', 'G-DHN2E0YZ2V');
     </script>
     <!-- End of Google tag (gtag.js) -->
+    <!--Hostinger test with git -->
 </head>
 
 <body <?php body_class(); ?>>
