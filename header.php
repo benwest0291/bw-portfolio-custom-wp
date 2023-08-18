@@ -32,6 +32,7 @@ if (isset($menuLocations['header'])) {
     </script>
     <!-- End of Google tag (gtag.js) -->
     <!--Hostinger test with git -->
+    <!--Hostinger test with git -->
 </head>
 
 <body <?php body_class(); ?>>
