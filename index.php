@@ -18,7 +18,7 @@ $index_error_message = get_field('index_error_message', 'option');
                     <?php if ( have_posts() ) { ?>
                         <?php while ( have_posts() ) {
                             the_post(); ?>
-                                <div class="col-12 col-md-6 col-lg-4">
+                                <div class="col-12 col-lg-6 col-xl-4">
                                     <?php get_template_part("inc/partials/blog-card"); ?>
                                 </div>
                         <?php }

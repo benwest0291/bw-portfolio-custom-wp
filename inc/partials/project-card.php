@@ -10,7 +10,7 @@ $tech_images = get_field('tech_stack');
                 <p class="project__card__content mt-2 mt-md-2 mb-3"><?php echo wp_trim_words(get_the_content(), 25); ?></p>
                     <div class="project__card__tech__container mb-2">
                         <?php if( $tech_images != null ) { ?>
-                            <div class="d-flex justify-content-between flex-wrap">
+                            <div class="d-flex justify-content-start justify-content-md-between flex-wrap">
                                 <?php foreach( $tech_images as $tech_image ) { ?>
                                     <img class="project__card__tech" src="<?php echo $tech_image['url']; ?>" alt="<?php echo esc_attr($tech_image['alt']); ?>" />
                                 <?php } ?>

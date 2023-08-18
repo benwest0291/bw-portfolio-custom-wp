@@ -78,23 +78,6 @@ span {
   color: inherit !important;
 }
 
-.to-animate {
-  opacity: 0;
-  transform: scale(0.6);
-  transition: transform 0.4s ease, opacity 0.3s ease;
-}
-.to-animate.in {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.block-white-bg {
-  background-color: #ffffff;
-}
-.block-white-bg + .block-white-bg {
-  padding-top: 0 !important;
-}
-
 .wp__link {
   color: #2DD4BF !important;
 }
@@ -826,6 +809,12 @@ hr {
   width: 80px;
   height: 80px;
 }
+@media (min-width: 768px) {
+  .tech__stack__image {
+    width: 70px;
+    height: 70px;
+  }
+}
 .tech__stack__image:hover, .tech__stack__image:focus {
   transform: translate(0, -15px);
 }
@@ -958,7 +947,7 @@ hr {
   background-position: 30% 50px;
   background-repeat: no-repeat;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .contact__bg {
     background-size: 650px;
   }
@@ -975,13 +964,8 @@ hr {
 .contact__social__heading {
   color: #ffffff;
 }
-.contact__social__spacer {
-  width: 25%;
-}
-@media (min-width: 768px) {
-  .contact__social__spacer {
-    width: 10%;
-  }
+.contact__social__icon + .contact__social__icon {
+  margin-left: 15px;
 }
 
 .projects__index {

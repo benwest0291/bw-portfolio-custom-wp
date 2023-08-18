@@ -23,7 +23,7 @@ $formShortcode = '[contact-form-7 id="' . $form->ID . '"]';
 <section class="contact">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-8 contact__bg"style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/rays.svg););">
+            <div class="col-12 col-md-6 col-xl-8 contact__bg"style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/rays.svg););">
                 <?php if($heading != null) { ?>
                     <h1 class="contact__heading mt-3"><?php echo $heading; ?></h1>
                 <?php } ?>
@@ -64,21 +64,21 @@ $formShortcode = '[contact-form-7 id="' . $form->ID . '"]';
                     <?php if($social_heading != null) { ?>
                         <h3 class="contact__social__heading"><?php echo $social_heading;?></h3>
                     <?php } ?>
-                    <div class="contact__social__spacer">
-                        <div class="d-flex justify-content-between mt-2">
+                    <div class="contact__social">
+                        <div class="mt-2">
                             <?php if($linkedin != null){ ?>
-                                <a title="Ben Wests Linkedin" href="<?php echo $linkedin;?>" target="_blank"><i class="fa-brands fa-linkedin social__icon"></i></a>
+                                <a title="Ben Wests Linkedin" href="<?php echo $linkedin;?>" target="_blank" class="contact__social__icon"><i class="fa-brands fa-linkedin social__icon"></i></a>
                             <?php } ?>
 
                             <?php if($github != null){ ?>
-                                <a title="Ben Wests Github"  href="<?php echo $github;?>" target="_blank"><i class="fa-brands fa-github social__icon"></i></a>
+                                <a title="Ben Wests Github" href="<?php echo $github;?>" target="_blank" class="contact__social__icon"><i class="fa-brands fa-github social__icon"></i></a>
                             <?php } ?>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="col-12 col-md-6 col-xl-4 mb-5">
                <?php include("inc/partials/contact-form.php"); ?>
             </div>
         </div>

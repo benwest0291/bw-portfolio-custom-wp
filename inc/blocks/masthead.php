@@ -26,15 +26,13 @@ $masthead_button_two_link = $data['masthead_button_two_link'];
                 <?php } ?>
 
                 <div class="masthead__btns__container mt-4">
-                    <div class="">
-                        <?php if ($masthead_button_one_text && $masthead_button_one_link != null){ ?>
-                            <a title="<?php echo $masthead_button_one_text; ?>" href="<?php echo $masthead_button_one_link; ?>" class="btn__primary masthead__btn"><?php echo $masthead_button_one_text; ?></a>
-                        <?php } ?>
+                    <?php if ($masthead_button_one_text && $masthead_button_one_link != null){ ?>
+                        <a title="<?php echo $masthead_button_one_text; ?>" href="<?php echo $masthead_button_one_link; ?>" class="btn__primary masthead__btn"><?php echo $masthead_button_one_text; ?></a>
+                    <?php } ?>
 
-                        <?php if ($masthead_button_two_text && $masthead_button_two_link != null){ ?>
-                            <a title="<?php echo $masthead_button_two_text; ?>" href="<?php echo $masthead_button_two_link; ?>" class="btn__secondary masthead__btn"><?php echo $masthead_button_two_text; ?></a>
-                        <?php } ?>
-                    </div>
+                    <?php if ($masthead_button_two_text && $masthead_button_two_link != null){ ?>
+                        <a title="<?php echo $masthead_button_two_text; ?>" href="<?php echo $masthead_button_two_link; ?>" class="btn__secondary masthead__btn"><?php echo $masthead_button_two_text; ?></a>
+                    <?php } ?>
                 </div>
             </div>
 

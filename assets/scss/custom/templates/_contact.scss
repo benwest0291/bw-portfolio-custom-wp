@@ -12,7 +12,7 @@
     background-position: 30% 50px;
     background-repeat: no-repeat;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(xl) {
       background-size: 650px;
     }
   }
@@ -33,13 +33,10 @@
     color: $white;
   }
 
-  &__social__spacer {
-    width: 25%;
-
-    @include media-breakpoint-up(md) {
-      width: 10%;
-    }
+  &__social__icon + &__social__icon{
+    margin-left: 15px;
   }
 }
+
 
 
