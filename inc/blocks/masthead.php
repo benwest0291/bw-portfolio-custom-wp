@@ -31,7 +31,7 @@ $masthead_button_two_link = $data['masthead_button_two_link'];
                     <?php } ?>
 
                     <?php if ($masthead_button_two_text && $masthead_button_two_link != null){ ?>
-                        <a title="<?php echo $masthead_button_two_text; ?>" href="<?php echo $masthead_button_two_link; ?>" class="btn__secondary masthead__btn"><?php echo $masthead_button_two_text; ?></a>
+                        <a title="<?php echo $masthead_button_two_text; ?>" href="<?php echo $masthead_button_two_link; ?>" target="_blank" class="btn__secondary masthead__btn"><?php echo $masthead_button_two_text; ?></a>
                     <?php } ?>
                 </div>
             </div>
