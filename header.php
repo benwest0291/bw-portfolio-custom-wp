@@ -1,5 +1,6 @@
 <?php
 // Menus
+
 $menuLocations = get_nav_menu_locations();
 $logo = get_theme_mod('logo');
 $linkedin = get_theme_mod('linkedin_url');
